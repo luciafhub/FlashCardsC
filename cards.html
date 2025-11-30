@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Flashcards Phrasal Verbs</title>
+
+<style>
+  body { 
+    font-family: Arial; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    background: #f0f0f0; 
+    padding: 30px;
+  }
+
+  h1 { margin-bottom: 10px; }
+
+  /* CONTENEDOR FLEX PARA CENTRAR BOTONES */
+  .center-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  /* CENTRAR LA TARJETA */
+  .card-container {
+    perspective: 1000px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .card {
+    width: 260px;
+    height: 160px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+    cursor: pointer;
+  }
+
+  .card.flip { transform: rotateY(180deg); }
+
+  .face {
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    background: white;
+    text-align: center;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+  }
+
+  .back { transform: rotateY(180deg); }
+
+  button {
+    padding: 8px 18px; 
+    border: none;
+    background: #2196F3; 
+    color: white; 
+    border-radius: 6px; 
+    cursor: pointer;
+  }
+
+  .btn-fav { background: #e91e63; }
+  .btn-toggle { background: #ff9800; }
+
+  /* VISTA COMPLETA DE FAVORITOS */
+  #favorites-view {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    width: 90%;
+    max-width: 500px;
+  }
+
+  .fav-item {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+  }
+
+  .fav-item button {
+    background: red;
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+
+</style>
+
+</head>
+<body>
+
+<!-- ========================================================= -->
+<!--                    VISTA PRINCIPAL                        -->
+<!-- ========================================================= -->
+
+<div id="main-view">
+
+  <h1>Flashcards Phrasal Verbs</h1>
+
+  <!-- BOTÓN CENTRADO -->
+  <div class="center-buttons">
+    <button onclick="openFavorites()">⭐ Ver favoritos</button>
+  </div>
+
+  <!-- ELIMINADO PROGRESO -->
+
+  <div class="card-container">
+    <div id="card" class="card" onclick="flipCard()">
+      <div class="face front"><div id="question"></div></div>
+      <div class="face back">
+        <div id="answer"></div>
+        <div id="example" style="margin-top: 5px; font-size: 14px; opacity: 0.7;"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BOTONES CENTRADOS -->
+  <div class="center-buttons">
+    <button onclick="prevCard()">Anterior</button>
+    <button class="btn-toggle" onclick="toggleDirection()">EN↔ES</button>
+    <button onclick="nextCard()">Siguiente</button>
+  </div>
+
+  <div class="center-buttons">
+    <button class="btn-fav" onclick="toggleFavorite()">⭐ Favorito</button>
+  </div>
+
+</div>
+
+
+
+<!-- ========================================================= -->
+<!--               VISTA COMPLETA DE FAVORITOS                 -->
+<!-- ========================================================= -->
+
+<div id="favorites-view" style="display:none;">
+  <h2>⭐ Favoritos</h2>
+
+  <div id="favorites-list"></div>
+
+  <div class="center-buttons">
+    <button onclick="closeFavorites()" style="background:#2196F3;">
+      Volver a estudiar
+    </button>
+  </div>
+</div>
+
+
+
+<script>
+
+// --- VOCABULARIO ---
+let vocab = [
+{"en": "be above (something)", "es": "estar por encima / ser tan bueno que no se duda de ti", "example": "She thinks she's above apologising.", "weight": 1},
+{"en": "be about (something)", "es": "tratar sobre algo", "example": "The book is about climate change.", "weight": 1},
+{"en": "be about to do (something)", "es": "estar a punto de hacer algo", "example": "I was about to leave when you called.", "weight": 1},
+{"en": "be after (someone)", "es": "ir detrás de alguien", "example": "The police are after him.", "weight": 1},
+{"en": "be against (someone/something)", "es": "estar en contra de", "example": "I'm against the new policy.", "weight": 1},
+{"en": "be getting at (something)", "es": "estar insinuando algo", "example": "What exactly are you getting at?", "weight": 1},
+{"en": "be behind (with)", "es": "estar retrasado con", "example": "I'm behind with my homework.", "weight": 1},
+{"en": "be down", "es": "estar triste", "example": "He's been down all week.", "weight": 1},
+{"en": "be (all) for (something/someone)", "es": "apoyar totalmente", "example": "I'm all for your idea.", "weight": 1},
+{"en": "be dying for (something)", "es": "morirse por algo", "example": "I'm dying for a coffee.", "weight": 1},
+{"en": "be in", "es": "estar en casa / estar de moda", "example": "She's not in right now.", "weight": 1},
+{"en": "be in for (something)", "es": "enfrentarse a algo difícil", "example": "We're in for a long night.", "weight": 1},
+{"en": "be taken in (by)", "es": "ser engañado", "example": "He was taken in by the scam.", "weight": 1},
+{"en": "be into (something)", "es": "estar muy metido en algo", "example": "She's really into photography.", "weight": 1},
+{"en": "be off", "es": "cancelarse / estar malo", "example": "The meeting is off.", "weight": 1},
+{"en": "be let off", "es": "librarse del castigo", "example": "They let him off with a warning.", "weight": 1},
+{"en": "be on", "es": "tener lugar / emitirse", "example": "The show is on at 9 p.m.", "weight": 1},
+{"en": "be not on", "es": "no ser aceptable", "example": "Your behaviour is not on.", "weight": 1},
+{"en": "be out", "es": "no estar en casa / pasado de moda", "example": "He's out at the moment.", "weight": 1},
+{"en": "be out of (something)", "es": "quedarse sin algo", "example": "We're out of milk.", "weight": 1},
+{"en": "be over", "es": "haber terminado", "example": "The exam is finally over.", "weight": 1},
+{"en": "be through (with)", "es": "haber terminado harto de algo", "example": "I'm through with this job.", "weight": 1},
+{"en": "be up", "es": "levantado / haber subido", "example": "Prices are up again.", "weight": 1},
+{"en": "be up to (something)", "es": "estar tramando algo", "example": "What are you up to?", "weight": 1},
+{"en": "be caught up (in)", "es": "verse atrapado", "example": "He was caught up in the conflict.", "weight": 1},
+{"en": "be made up of (something)", "es": "estar compuesto por", "example": "The team is made up of experts.", "weight": 1},
+{"en": "call (something) off", "es": "cancelar algo", "example": "They called off the meeting.", "weight": 1},
+{"en": "call on (someone)", "es": "1) visitar a alguien 2) pedir una respuesta", "example": "The teacher called on me to speak.", "weight": 1},
+{"en": "call (something) out", "es": "gritar / decir algo en voz alta", "example": "She called out his name.", "weight": 1},
+{"en": "call after (someone)", "es": "poner el nombre de alguien", "example": "He was called after his grandfather.", "weight": 1},
+{"en": "call around / round", "es": "1) llamar a varios sitios 2) pasar a visitar", "example": "I called around to find a mechanic.", "weight": 1},
+{"en": "call (someone) back", "es": "devolver una llamada", "example": "I’ll call you back later.", "weight": 1},
+{"en": "call in", "es": "1) llamar a alguien para que venga 2) hacer una visita breve", "example": "The doctor was called in urgently.", "weight": 1},
+{"en": "call (someone) up", "es": "llamar por teléfono", "example": "She called me up last night.", "weight": 1},
+{"en": "clear (something) up", "es": "ordenar / limpiar", "example": "We need to clear up this mess.", "weight": 1},
+{"en": "clear away", "es": "1) irse 2) recoger / retirar", "example": "Please clear away the dishes.", "weight": 1},
+{"en": "clear off", "es": "largarse / irse rápido", "example": "He told us to clear off.", "weight": 1},
+{"en": "clear out", "es": "1) vaciar / limpiar a fondo 2) irse", "example": "I need to clear out the attic.", "weight": 1},
+{"en": "come about", "es": "ocurrir", "example": "How did this problem come about?", "weight": 1},
+{"en": "come across (as someone)", "es": "dar la impresión de ser", "example": "She comes across as very confident.", "weight": 1},
+{"en": "come across (something)", "es": "encontrarse algo por casualidad", "example": "I came across an old photo.", "weight": 1},
+{"en": "come apart", "es": "desmoronarse / romperse", "example": "The toy came apart in my hands.", "weight": 1},
+{"en": "come back (from)", "es": "volver de", "example": "She came back from Paris yesterday.", "weight": 1},
+{"en": "come back (into fashion)", "es": "volver a ponerse de moda", "example": "Bell-bottom jeans have come back into fashion.", "weight": 1},
+{"en": "come back (to)", "es": "volver a la memoria", "example": "Her name finally came back to me.", "weight": 1},
+{"en": "come between (people)", "es": "interponerse / causar conflicto", "example": "Money issues came between them.", "weight": 1},
+{"en": "come down", "es": "bajar / disminuir", "example": "Prices have come down recently.", "weight": 1},
+{"en": "come down with (something)", "es": "caer enfermo con", "example": "He came down with the flu.", "weight": 1},
+{"en": "come from (somewhere)", "es": "venir de / provenir de", "example": "This cheese comes from Italy.", "weight": 1},
+{"en": "come on", "es": "1) darse prisa 2) empezar 3) llegar", "example": "The show is about to come on.", "weight": 1},
+{"en": "come out", "es": "salir / publicarse", "example": "Her new book came out today.", "weight": 1},
+{"en": "come round", "es": "1) pasarse por casa 2) volver en sí", "example": "She came round after fainting.", "weight": 1},
+{"en": "come through", "es": "saberse / salir a la luz", "example": "The truth finally came through.", "weight": 1},
+{"en": "come through (something)", "es": "superar algo duro", "example": "She came through the surgery well.", "weight": 1},
+{"en": "come to", "es": "recobrar el conocimiento", "example": "He fainted but came to quickly.", "weight": 1},
+{"en": "come up", "es": "surgir / aparecer", "example": "The topic came up in class.", "weight": 1},
+{"en": "come up against (something)", "es": "enfrentarse a un problema", "example": "We came up against many obstacles.", "weight": 1},
+{"en": "come up to (something)", "es": "alcanzar un nivel", "example": "The film didn’t come up to my expectations.", "weight": 1},
+{"en": "come up with (something)", "es": "idear / inventar", "example": "She came up with a great solution.", "weight": 1},
+{"en": "cut down (on)", "es": "reducir el consumo de", "example": "I’m trying to cut down on sugar.", "weight": 1},
+{"en": "cut down", "es": "talar / cortar", "example": "They cut down the old tree.", "weight": 1},
+{"en": "cut back", "es": "recortar gastos", "example": "The company has cut back on staff.", "weight": 1},
+{"en": "cut across", "es": "atajar / tomar un atajo", "example": "We can cut across the park.", "weight": 1},
+{"en": "cut in", "es": "interrumpir", "example": "Don’t cut in while I’m talking!", "weight": 1},
+{"en": "cut off", "es": "1) cortar suministro 2) cortar comunicación", "example": "We were cut off during the call.", "weight": 1},
+{"en": "cut out", "es": "pararse (motor/máquina)", "example": "The engine suddenly cut out.", "weight": 1},
+{"en": "cut through", "es": "abrirse paso / agilizar", "example": "This tool helps you cut through paperwork.", "weight": 1},
+{"en": "cut up", "es": "cortar en trozos", "example": "He cut up the vegetables.", "weight": 1},
+{"en": "fall apart", "es": "desmoronarse / romperse", "example": "The book fell apart in my hands.", "weight": 1},
+{"en": "fall back on (something)", "es": "recurrir a algo en caso de necesidad", "example": "We can fall back on our savings.", "weight": 1},
+{"en": "fall behind (with)", "es": "quedarse atrás / retrasarse", "example": "I fell behind with my rent.", "weight": 1},
+{"en": "fall for (someone)", "es": "enamorarse de alguien", "example": "He fell for her instantly.", "weight": 1},
+{"en": "fall for (something)", "es": "caer en una trampa / creer una mentira", "example": "I can’t believe you fell for that scam.", "weight": 1},
+{"en": "fall off", "es": "caerse / disminuir", "example": "Sales have fallen off this year.", "weight": 1},
+{"en": "fall out (of)", "es": "caerse de un sitio alto", "example": "He fell out of the window (but survived).", "weight": 1},
+{"en": "fall out (with)", "es": "pelearse con alguien", "example": "They fell out over money.", "weight": 1},
+{"en": "fall over", "es": "caerse al suelo", "example": "She tripped and fell over.", "weight": 1},
+{"en": "fall through", "es": "fracasar / venirse abajo", "example": "Our plans fell through at the last minute.", "weight": 1},
+{"en": "get (something) across (to)", "es": "hacer entender algo", "example": "I tried to get my point across.", "weight": 1},
+{"en": "get ahead (get on in life)", "es": "progresar / tener éxito en la vida", "example": "She works hard to get ahead.", "weight": 1},
+{"en": "get around to (doing)", "es": "acabar haciendo algo que posponías", "example": "I never got around to calling him.", "weight": 1},
+{"en": "get at (someone)", "es": "criticar constantemente", "example": "She’s always getting at me.", "weight": 1},
+{"en": "get away (from/to)", "es": "escaparse / irse", "example": "We managed to get away for the weekend.", "weight": 1},
+{"en": "get away with (something)", "es": "salir impune", "example": "He got away with cheating.", "weight": 1},
+{"en": "get back (from)", "es": "volver de", "example": "We got back from Italy yesterday.", "weight": 1},
+{"en": "get (something) back", "es": "recuperar algo", "example": "I hope I get my money back.", "weight": 1},
+{"en": "get your own back (on someone)", "es": "vengarte de alguien", "example": "She got her own back on him.", "weight": 1},
+{"en": "get by", "es": "arreglárselas", "example": "We don’t earn much, but we get by.", "weight": 1},
+{"en": "get (someone) down", "es": "deprimir a alguien", "example": "Rainy days really get me down.", "weight": 1},
+{"en": "get (something) down", "es": "anotar / escribir", "example": "Did you get that down?", "weight": 1},
+{"en": "get down to (something)", "es": "ponerse a hacer algo", "example": "Let’s get down to work.", "weight": 1},
+{"en": "get in touch (with someone)", "es": "ponerse en contacto", "example": "I’ll get in touch with you soon.", "weight": 1},
+{"en": "get into (something)", "es": "entrar / empezar", "example": "He got into the university.", "weight": 1},
+{"en": "get (someone) into trouble", "es": "meter en problemas", "example": "Don’t get your brother into trouble.", "weight": 1},
+{"en": "get off", "es": "bajarse / marcharse", "example": "We get off at the next stop.", "weight": 1},
+{"en": "get on (with)", "es": "llevarse bien", "example": "They get on really well.", "weight": 1},
+{"en": "get (someone) out of trouble", "es": "sacar a alguien de problemas", "example": "His lawyer got him out of trouble.", "weight": 1},
+{"en": "get out of (doing)", "es": "evitar hacer algo", "example": "He got out of washing the dishes.", "weight": 1},
+{"en": "get over (someone)", "es": "superar a alguien", "example": "It took her months to get over him.", "weight": 1},
+{"en": "get over (something)", "es": "recuperarse de algo", "example": "She finally got over the flu.", "weight": 1},
+{"en": "get through", "es": "lograr comunicar / aprobar", "example": "I got through the exam.", "weight": 1},
+{"en": "get through (something)", "es": "superar un período difícil", "example": "We got through tough times.", "weight": 1},
+{"en": "get (something) through (to someone)", "es": "hacer entender algo a alguien", "example": "I can’t get it through to him.", "weight": 1},
+{"en": "get to (someone)", "es": "afectar / molestar", "example": "His comments really got to me.", "weight": 1},
+{"en": "get to (somewhere)", "es": "llegar a", "example": "What time did you get to Madrid?", "weight": 1},
+{"en": "get together (with)", "es": "reunirse con", "example": "We got together last weekend.", "weight": 1},
+{"en": "get (someone) up", "es": "despertar a alguien", "example": "I got the kids up early.", "weight": 1},
+{"en": "get up to (something)", "es": "hacer algo travieso / malo", "example": "What are you kids getting up to?", "weight": 1},
+{"en": "give (something) away", "es": "regalar / revelar", "example": "She gave away all her clothes.", "weight": 1},
+{"en": "give back", "es": "devolver", "example": "Please give back my book.", "weight": 1},
+{"en": "give in (to)", "es": "ceder / rendirse", "example": "He finally gave in to their demands.", "weight": 1},
+{"en": "give in", "es": "rendirse", "example": "We can’t give in now.", "weight": 1},
+{"en": "give (something) out", "es": "repartir / anunciar", "example": "The teacher gave out the worksheets.", "weight": 1},
+{"en": "give up", "es": "darse por vencido / dejar trabajo", "example": "He gave up and asked for help.", "weight": 1},
+{"en": "give up (something)", "es": "dejar de hacer algo", "example": "I gave up smoking last year.", "weight": 1},
+{"en": "go after (sb)", "es": "perseguir a alguien", "example": "The police went after the thief.", "weight": 1},
+{"en": "go after (something)", "es": "intentar conseguir algo", "example": "She’s going after a promotion.", "weight": 1},
+{"en": "go along with (someone/something)", "es": "estar de acuerdo / apoyar", "example": "I don’t go along with that idea.", "weight": 1},
+{"en": "go away", "es": "irse / desaparecer", "example": "We’re going away for the weekend.", "weight": 1},
+{"en": "go down", "es": "bajar / disminuir", "example": "Prices have gone down again.", "weight": 1},
+{"en": "go down with (something)", "es": "caer enfermo de", "example": "He’s gone down with the flu.", "weight": 1},
+{"en": "go for (something)", "es": "intentar conseguir / gustar", "example": "I’m going for the job.", "weight": 1},
+{"en": "go in", "es": "entrar / ser entendido", "example": "The idea didn’t go in.", "weight": 1},
+{"en": "go in for (something)", "es": "dedicarse a algo / disfrutar", "example": "She goes in for yoga.", "weight": 1},
+{"en": "go into (something)", "es": "dedicarse a / analizar en detalle", "example": "We didn’t go into the details.", "weight": 1},
+{"en": "go off", "es": "marcharse / estropearse / sonar / explotar / apagarse", "example": "The alarm went off at 6 a.m.", "weight": 1},
+{"en": "go off (something/someone)", "es": "dejar de gustar", "example": "I’ve gone off chocolate.", "weight": 1},
+{"en": "go on", "es": "seguir / continuar", "example": "Go on, I’m listening.", "weight": 1},
+{"en": "go out", "es": "salir / apagarse", "example": "The lights went out suddenly.", "weight": 1},
+{"en": "go out with (someone)", "es": "salir con alguien", "example": "She’s going out with Tom.", "weight": 1},
+{"en": "go over (to)", "es": "acercarse", "example": "He went over to talk to her.", "weight": 1},
+{"en": "go over (something)", "es": "revisar / examinar", "example": "Let’s go over your answers.", "weight": 1},
+{"en": "go round", "es": "pasarse por / alcanzar para todos / rodear", "example": "There wasn’t enough cake to go round.", "weight": 1},
+{"en": "go through (something)", "es": "pasar por algo", "example": "She went through a tough time.", "weight": 1},
+{"en": "go through with (something)", "es": "llevar a cabo algo difícil", "example": "He went through with the surgery.", "weight": 1},
+{"en": "go together", "es": "combinar / quedar bien juntos", "example": "Blue and gold go together well.", "weight": 1},
+{"en": "go under", "es": "hundirse / quebrar", "example": "The ship went under quickly.", "weight": 1},
+{"en": "go up", "es": "subir / construirse", "example": "Food prices have gone up.", "weight": 1},
+{"en": "go with (something)", "es": "combinar con", "example": "Those shoes go with your dress.", "weight": 1},
+{"en": "hold against (someone)", "es": "guardar rencor / tener en contra", "example": "I don’t hold it against you.", "weight": 1},
+{"en": "hold back", "es": "contenerse / no mostrar emoción", "example": "She couldn’t hold back her tears.", "weight": 1},
+{"en": "hold back", "es": "frenar / impedir avanzar", "example": "Fear held him back.", "weight": 1},
+{"en": "hold back (information)", "es": "ocultar / no revelar", "example": "They held back important details.", "weight": 1},
+{"en": "hold back from", "es": "contenerse de hacer algo", "example": "He held back from shouting.", "weight": 1},
+{"en": "hold down", "es": "mantener un trabajo", "example": "He can't hold down a job for long.", "weight": 1},
+{"en": "hold down", "es": "sujetar / inmovilizar", "example": "They held him down on the ground.", "weight": 1},
+{"en": "hold in", "es": "retener / contener", "example": "Try to hold it in until we arrive.", "weight": 1},
+{"en": "hold forth", "es": "exponer / disertar", "example": "He held forth on politics for hours.", "weight": 1},
+{"en": "hold off", "es": "retrasar / aplazar", "example": "Let’s hold off the meeting.", "weight": 1},
+{"en": "hold off", "es": "no llegar (mal tiempo)", "example": "The rain held off all afternoon.", "weight": 1},
+{"en": "hold off (someone)", "es": "mantener a raya", "example": "They held off the enemy.", "weight": 1},
+{"en": "hold on", "es": "esperar", "example": "Hold on a second.", "weight": 1},
+{"en": "hold on (to something)", "es": "agarrarse / sujetar fuerte", "example": "Hold on to the rope!", "weight": 1},
+{"en": "hold on", "es": "conservar / retener demasiado", "example": "She held on to old clothes for years.", "weight": 1},
+{"en": "hold onto", "es": "agarrar fuerte", "example": "Hold onto the rail.", "weight": 1},
+{"en": "hold out", "es": "resistir", "example": "They held out for three days.", "weight": 1},
+{"en": "hold out", "es": "extender / ofrecer", "example": "He held out his hand.", "weight": 1},
+{"en": "hold out for (something)", "es": "esperar algo mejor", "example": "She’s holding out for a higher salary.", "weight": 1},
+{"en": "hold out on (someone)", "es": "ocultar algo / no pagar", "example": "Don’t hold out on me!", "weight": 1},
+{"en": "hold over", "es": "aplazar", "example": "The decision was held over.", "weight": 1},
+{"en": "hold over", "es": "durar más de lo previsto", "example": "The show held over for another week.", "weight": 1},
+{"en": "hold together", "es": "mantenerse unido", "example": "The team held together through hard times.", "weight": 1},
+{"en": "hold up", "es": "retrasar", "example": "Traffic held us up.", "weight": 1},
+{"en": "hold up", "es": "atracar", "example": "The bank was held up last night.", "weight": 1},
+{"en": "hold with", "es": "aceptar / estar de acuerdo con", "example": "I don’t hold with violence.", "weight": 1},
+  // Añadir aquí tus phrasal verbs reales
+];
+
+// ---------------- FAVORITOS ----------------
+let favorites = JSON.parse(localStorage.getItem("favorites") || "[]");
+
+// ---------------- SHUFFLE ----------------
+function shuffle(arr) {
+  for (let i = arr.length - 1; i > 0; i--) {
+    let j = Math.floor(Math.random() * (i+1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+}
+shuffle(vocab);
+
+let index = 0;
+let reversed = false;
+
+// ---------------- MOSTRAR TARJETA ----------------
+function showCard() {
+  const c = vocab[index];
+  if (!c) return;
+
+  document.getElementById("question").textContent = reversed ? c.es : c.en;
+  document.getElementById("answer").textContent = reversed ? c.en : c.es;
+  document.getElementById("example").textContent = c.example;
+
+  // Actualizar texto del botón de favorito
+  const favBtn = document.querySelector(".btn-fav");
+  favBtn.textContent = isFavorite(c) ? "⭐ Quitar favorito" : "⭐ Favorito";
+}
+
+// ---------------- GIRO ----------------
+function flipCard() {
+  document.getElementById("card").classList.toggle("flip");
+}
+
+// ---------------- NAVEGACIÓN ----------------
+function nextCard() {
+  index = Math.floor(Math.random() * vocab.length);
+  document.getElementById("card").classList.remove("flip");
+  showCard();
+}
+
+function prevCard() {
+  index = (index - 1 + vocab.length) % vocab.length;
+  document.getElementById("card").classList.remove("flip");
+  showCard();
+}
+
+// ---------------- CAMBIAR EN ↔ ES ----------------
+function toggleDirection() {
+  reversed = !reversed;
+  showCard();
+}
+
+// ---------------- FAVORITOS ----------------
+function isFavorite(item) {
+  return favorites.some(f => f.en === item.en);
+}
+
+function toggleFavorite() {
+  const item = vocab[index];
+  if (isFavorite(item)) {
+    favorites = favorites.filter(f => f.en !== item.en);
+  } else {
+    favorites.push(item);
+  }
+  localStorage.setItem("favorites", JSON.stringify(favorites));
+  
+  showCard();
+  updateFavoritesPage();
+}
+
+function removeFavorite(i) {
+  favorites.splice(i, 1);
+  localStorage.setItem("favorites", JSON.stringify(favorites));
+  updateFavoritesPage();
+}
+
+// ---------------- VISTA FAVORITOS ----------------
+function openFavorites() {
+  document.getElementById("main-view").style.display = "none";
+  document.getElementById("favorites-view").style.display = "block";
+  updateFavoritesPage();
+}
+
+function closeFavorites() {
+  document.getElementById("favorites-view").style.display = "none";
+  document.getElementById("main-view").style.display = "block";
+}
+
+function updateFavoritesPage() {
+  const box = document.getElementById("favorites-list");
+  box.innerHTML = "";
+
+  if (favorites.length === 0) {
+    box.innerHTML = "<p>No hay favoritos aún.</p>";
+    return;
+  }
+
+  favorites.forEach((f, i) => {
+    box.innerHTML += `
+      <div class="fav-item">
+        <strong>${f.en}</strong><br>
+        ${f.es}<br>
+        <em>${f.example}</em><br>
+        <button onclick="removeFavorite(${i})">Quitar</button>
+      </div>`;
+  });
+}
+
+// ---------------- INICIO ----------------
+showCard();
+
+</script>
+
+</body>
+</html>
