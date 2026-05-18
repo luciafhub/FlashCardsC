@@ -1,0 +1,2942 @@
+[
+  {
+    "en": "Achievement",
+    "es": "Logro",
+    "example": "Her greatest academic achievement was winning the scholarship.",
+    "weight": 1,
+    "topic": "Education and Learning"
+  },
+  {
+    "en": "Assignment",
+    "es": "Tarea / trabajo",
+    "example": "We have to hand in the assignment tomorrow.",
+    "weight": 1,
+    "topic": "Education and Learning"
+  },
+  {
+    "en": "Dissertation",
+    "es": "Tesis",
+    "example": "He spent two years writing his dissertation.",
+    "weight": 1,
+    "topic": "Education and Learning"
+  },
+  {
+    "en": "Lecture",
+    "es": "Conferencia / clase",
+    "example": "Today's lecture was extremely interesting.",
+    "weight": 1,
+    "topic": "Education and Learning"
+  },
+  {
+    "en": "Scholarship",
+    "es": "Beca",
+    "example": "She received a scholarship to study abroad.",
+    "weight": 1,
+    "topic": "Education and Learning"
+  },
+  {
+    "en": "Tuition fees",
+    "es": "Matrícula",
+    "example": "Tuition fees have increased this year.",
+    "weight": 1,
+    "topic": "Education and Learning"
+  },
+  {
+    "en": "Undergraduate",
+    "es": "Estudiante de grado",
+    "example": "Undergraduate students usually attend introductory courses.",
+    "weight": 1,
+    "topic": "Education and Learning"
+  },
+  {
+    "en": "Revise",
+    "es": "Repasar",
+    "example": "I need to revise for my English exam.",
+    "weight": 1,
+    "topic": "Education and Learning"
+  },
+  {
+    "en": "Deadline",
+    "es": "Fecha límite",
+    "example": "The deadline for the project is Friday.",
+    "weight": 1,
+    "topic": "Education and Learning"
+  },
+  {
+    "en": "Attend",
+    "es": "Asistir",
+    "example": "Students must attend classes regularly.",
+    "weight": 1,
+    "topic": "Education and Learning"
+  },
+  {
+    "en": "Bachelor’s thesis",
+    "es": "Trabajo Fin de Grado",
+    "example": "I defended my bachelor’s thesis.",
+    "weight": 1,
+    "topic": "Education and Learning"
+  },
+  {
+    "en": "Undergraduate dissertation",
+    "es": "Trabajo Fin de Grado",
+    "example": "I’m doing my undergraduate dissertation on recommender systems.",
+    "weight": 1,
+    "topic": "Education and Learning"
+  },
+  {
+    "en": "Internship",
+    "es": "Prácticas",
+    "example": "She completed an internship at a tech company.",
+    "weight": 1,
+    "topic": "Education and Learning"
+  },
+  {
+    "en": "Awareness",
+    "es": "Conciencia",
+    "example": "Schools should raise awareness about mental health.",
+    "weight": 1,
+    "topic": "Education and Learning"
+  },
+  {
+    "en": "Lifelong learning",
+    "es": "Aprendizaje continuo",
+    "example": "Lifelong learning is important in modern society.",
+    "weight": 1,
+    "topic": "Education and Learning"
+  },
+  {
+    "en": "Critical thinking",
+    "es": "Pensamiento crítico",
+    "example": "University encourages critical thinking.",
+    "weight": 1,
+    "topic": "Education and Learning"
+  },
+  {
+    "en": "Drop out",
+    "es": "Abandonar estudios",
+    "example": "Some students drop out due to financial problems.",
+    "weight": 1,
+    "topic": "Education and Learning"
+  },
+  {
+    "en": "Enrol",
+    "es": "Matricularse",
+    "example": "He enrolled in an online course.",
+    "weight": 1,
+    "topic": "Education and Learning"
+  },
+  {
+    "en": "Literacy",
+    "es": "Alfabetización",
+    "example": "Digital literacy is becoming increasingly important.",
+    "weight": 1,
+    "topic": "Education and Learning"
+  },
+  {
+    "en": "Peer pressure",
+    "es": "Presión de grupo",
+    "example": "Peer pressure can affect students' performance.",
+    "weight": 1,
+    "topic": "Education and Learning"
+  },
+  {
+    "en": "Vocational training",
+    "es": "Formación profesional",
+    "example": "Vocational training prepares students for specific careers.",
+    "weight": 1,
+    "topic": "Education and Learning"
+  },
+  {
+    "en": "Academic performance",
+    "es": "Rendimiento académico",
+    "example": "His academic performance improved significantly this year.",
+    "weight": 1,
+    "topic": "Education and Learning"
+  },
+  {
+    "en": "Assessment",
+    "es": "Evaluación",
+    "example": "Continuous assessment can reduce exam stress.",
+    "weight": 1,
+    "topic": "Education and Learning"
+  },
+  {
+    "en": "Bachelor’s degree",
+    "es": "Grado universitario",
+    "example": "She is studying for a bachelor’s degree in biology.",
+    "weight": 1,
+    "topic": "Education and Learning"
+  },
+  {
+    "en": "Cheating",
+    "es": "Copiar / hacer trampas",
+    "example": "Cheating during exams can lead to expulsion.",
+    "weight": 1,
+    "topic": "Education and Learning"
+  },
+  {
+    "en": "Evaluation criteria",
+    "es": "Criterios de evaluación",
+    "example": "The evaluation criteria for the project include originality and technical accuracy.",
+    "weight": 1,
+    "topic": "Education and Learning"
+  },
+  {
+    "en": "Expel",
+    "es": "Expulsar",
+    "example": "The school decided to expel the student for misconduct.",
+    "weight": 1,
+    "topic": "Education and Learning"
+  },
+  {
+    "en": "Learning outcome",
+    "es": "Resultado de aprendizaje",
+    "example": "The course has clear learning outcomes.",
+    "weight": 1,
+    "topic": "Education and Learning"
+  },
+  {
+    "en": "Marking scheme",
+    "es": "Criterio de corrección",
+    "example": "Students should read the marking scheme carefully.",
+    "weight": 1,
+    "topic": "Education and Learning"
+  },
+  {
+    "en": "Nursery school",
+    "es": "Guardería / preescolar",
+    "example": "Nursery school helps children develop social skills.",
+    "weight": 1,
+    "topic": "Education and Learning"
+  },
+  {
+    "en": "Pass with flying colours",
+    "es": "Aprobar con nota",
+    "example": "She passed the exam with flying colours.",
+    "weight": 1,
+    "topic": "Education and Learning"
+  },
+  {
+    "en": "Private tutor",
+    "es": "Profesor particular",
+    "example": "He hired a private tutor for maths lessons.",
+    "weight": 1,
+    "topic": "Education and Learning"
+  },
+  {
+    "en": "Self-discipline",
+    "es": "Autodisciplina",
+    "example": "Online learning requires a lot of self-discipline.",
+    "weight": 1,
+    "topic": "Education and Learning"
+  },
+  {
+    "en": "Sit an exam",
+    "es": "Presentarse a un examen",
+    "example": "I have to sit three exams next week.",
+    "weight": 1,
+    "topic": "Education and Learning"
+  },
+  {
+    "en": "Specialise in",
+    "es": "Especializarse en",
+    "example": "She wants to specialise in cybersecurity.",
+    "weight": 1,
+    "topic": "Education and Learning"
+  },
+  {
+    "en": "Take notes",
+    "es": "Tomar apuntes",
+    "example": "Students should take notes during lectures.",
+    "weight": 1,
+    "topic": "Education and Learning"
+  },
+  {
+    "en": "Salary",
+    "es": "Salario",
+    "example": "She earns a high salary.",
+    "weight": 1,
+    "topic": "Education and Learning"
+  },
+  {
+    "en": "Wage",
+    "es": "Sueldo por horas",
+    "example": "Minimum wages have increased recently.",
+    "weight": 2,
+    "topic": "Work and Business"
+  },
+  {
+    "en": "Income",
+    "es": "Ingresos",
+    "example": "Many families have a low income.",
+    "weight": 2,
+    "topic": "Work and Business"
+  },
+  {
+    "en": "Revenue",
+    "es": "Ingresos empresariales",
+    "example": "The company’s revenue grew last year.",
+    "weight": 2,
+    "topic": "Work and Business"
+  },
+  {
+    "en": "Profit",
+    "es": "Beneficio",
+    "example": "The business made huge profits.",
+    "weight": 2,
+    "topic": "Work and Business"
+  },
+  {
+    "en": "Debt",
+    "es": "Deuda",
+    "example": "He is trying to pay off his debt.",
+    "weight": 2,
+    "topic": "Work and Business"
+  },
+  {
+    "en": "Savings",
+    "es": "Ahorros",
+    "example": "She spent all her savings on a car.",
+    "weight": 2,
+    "topic": "Work and Business"
+  },
+  {
+    "en": "Budget",
+    "es": "Presupuesto",
+    "example": "We need to stick to our budget.",
+    "weight": 2,
+    "topic": "Work and Business"
+  },
+  {
+    "en": "Investment",
+    "es": "Inversión",
+    "example": "Real estate is a good investment.",
+    "weight": 2,
+    "topic": "Work and Business"
+  },
+  {
+    "en": "Tax",
+    "es": "Impuesto",
+    "example": "Citizens must pay taxes every year.",
+    "weight": 2,
+    "topic": "Work and Business"
+  },
+  {
+    "en": "Employer",
+    "es": "Empleador",
+    "example": "Her employer offered flexible hours.",
+    "weight": 2,
+    "topic": "Work and Business"
+  },
+  {
+    "en": "Employee",
+    "es": "Empleado",
+    "example": "Employees deserve fair treatment.",
+    "weight": 2,
+    "topic": "Work and Business"
+  },
+  {
+    "en": "Colleague",
+    "es": "Compañero de trabajo",
+    "example": "My colleagues are very supportive.",
+    "weight": 2,
+    "topic": "Work and Business"
+  },
+  {
+    "en": "Shift",
+    "es": "Turno",
+    "example": "She works the night shift.",
+    "weight": 2,
+    "topic": "Work and Business"
+  },
+  {
+    "en": "Overtime",
+    "es": "Horas extra",
+    "example": "He gets paid for overtime.",
+    "weight": 2,
+    "topic": "Work and Business"
+  },
+  {
+    "en": "Promotion",
+    "es": "Ascenso",
+    "example": "She got a promotion at work.",
+    "weight": 2,
+    "topic": "Work and Business"
+  },
+  {
+    "en": "Resign",
+    "es": "Dimitir / renunciar",
+    "example": "He resigned from his position.",
+    "weight": 2,
+    "topic": "Work and Business"
+  },
+  {
+    "en": "Retire",
+    "es": "Jubilarse",
+    "example": "My grandfather retired at 65.",
+    "weight": 2,
+    "topic": "Work and Business"
+  },
+  {
+    "en": "Recruit",
+    "es": "Contratar",
+    "example": "The company wants to recruit graduates.",
+    "weight": 2,
+    "topic": "Work and Business"
+  },
+  {
+    "en": "Vacancy",
+    "es": "Vacante",
+    "example": "There are several job vacancies available.",
+    "weight": 2,
+    "topic": "Work and Business"
+  },
+  {
+    "en": "Unemployment",
+    "es": "Desempleo",
+    "example": "Youth unemployment is a serious issue.",
+    "weight": 2,
+    "topic": "Work and Business"
+  },
+  {
+    "en": "Career",
+    "es": "Carrera profesional",
+    "example": "She wants a successful career.",
+    "weight": 2,
+    "topic": "Work and Business"
+  },
+  {
+    "en": "Freelancer",
+    "es": "Autónomo / freelance",
+    "example": "Many designers work as freelancers.",
+    "weight": 2,
+    "topic": "Work and Business"
+  },
+  {
+    "en": "Deadline",
+    "es": "Fecha límite",
+    "example": "We must meet the deadline.",
+    "weight": 2,
+    "topic": "Work and Business"
+  },
+  {
+    "en": "Workload",
+    "es": "Carga de trabajo",
+    "example": "His workload is overwhelming.",
+    "weight": 2,
+    "topic": "Work and Business"
+  },
+  {
+    "en": "Leadership",
+    "es": "Liderazgo",
+    "example": "Good leadership motivates employees.",
+    "weight": 2,
+    "topic": "Work and Business"
+  },
+  {
+    "en": "Negotiation",
+    "es": "Negociación",
+    "example": "Negotiation skills are essential in business.",
+    "weight": 2,
+    "topic": "Work and Business"
+  },
+  {
+    "en": "Contract",
+    "es": "Contrato",
+    "example": "She signed a permanent contract.",
+    "weight": 2,
+    "topic": "Work and Business"
+  },
+  {
+    "en": "Temporary job",
+    "es": "Trabajo temporal",
+    "example": "He found a temporary job for the summer.",
+    "weight": 2,
+    "topic": "Work and Business"
+  },
+  {
+    "en": "Full-time",
+    "es": "Jornada completa",
+    "example": "She has a full-time job.",
+    "weight": 2,
+    "topic": "Work and Business"
+  },
+  {
+    "en": "Part-time",
+    "es": "Media jornada",
+    "example": "Many students work part-time.",
+    "weight": 2,
+    "topic": "Work and Business"
+  },
+  {
+    "en": "Remote work",
+    "es": "Teletrabajo",
+    "example": "Remote work became more common after COVID.",
+    "weight": 2,
+    "topic": "Work and Business"
+  },
+  {
+    "en": "Commute",
+    "es": "Trayecto al trabajo",
+    "example": "His daily commute takes two hours.",
+    "weight": 2,
+    "topic": "Work and Business"
+  },
+  {
+    "en": "Pension",
+    "es": "Pensión",
+    "example": "Workers contribute to their pension.",
+    "weight": 2,
+    "topic": "Work and Business"
+  },
+  {
+    "en": "Insurance",
+    "es": "Seguro",
+    "example": "Health insurance is expensive.",
+    "weight": 2,
+    "topic": "Work and Business"
+  },
+  {
+    "en": "Mortgage",
+    "es": "Hipoteca",
+    "example": "They are paying a mortgage.",
+    "weight": 2,
+    "topic": "Work and Business"
+  },
+  {
+    "en": "Bank account",
+    "es": "Cuenta bancaria",
+    "example": "I opened a new bank account.",
+    "weight": 2,
+    "topic": "Work and Business"
+  },
+  {
+    "en": "Loan",
+    "es": "Préstamo",
+    "example": "She applied for a loan.",
+    "weight": 2,
+    "topic": "Work and Business"
+  },
+  {
+    "en": "Economic growth",
+    "es": "Crecimiento económico",
+    "example": "Economic growth creates jobs.",
+    "weight": 2,
+    "topic": "Work and Business"
+  },
+  {
+    "en": "Bankruptcy",
+    "es": "Bancarrota",
+    "example": "The company declared bankruptcy.",
+    "weight": 2,
+    "topic": "Work and Business"
+  },
+  {
+    "en": "Entrepreneurship",
+    "es": "Emprendimiento",
+    "example": "Entrepreneurship drives innovation.",
+    "weight": 2,
+    "topic": "Work and Business"
+  },
+  {
+    "en": "Skilled worker",
+    "es": "Trabajador cualificado",
+    "example": "Skilled workers are in high demand.",
+    "weight": 2,
+    "topic": "Work and Business"
+  },
+  {
+    "en": "Economic crisis",
+    "es": "Crisis económica",
+    "example": "Many businesses closed during the economic crisis.",
+    "weight": 3,
+    "topic": "Economy and Money"
+  },
+  {
+    "en": "Inflation",
+    "es": "Inflación",
+    "example": "Inflation has increased the cost of living.",
+    "weight": 3,
+    "topic": "Economy and Money"
+  },
+  {
+    "en": "Deflation",
+    "es": "Deflación",
+    "example": "Deflation can reduce consumer spending.",
+    "weight": 3,
+    "topic": "Economy and Money"
+  },
+  {
+    "en": "Recession",
+    "es": "Recesión",
+    "example": "The country entered a recession last year.",
+    "weight": 3,
+    "topic": "Economy and Money"
+  },
+  {
+    "en": "Interest rate",
+    "es": "Tipo de interés",
+    "example": "Banks raised interest rates recently.",
+    "weight": 3,
+    "topic": "Economy and Money"
+  },
+  {
+    "en": "Stock market",
+    "es": "Bolsa de valores",
+    "example": "The stock market fell dramatically yesterday.",
+    "weight": 3,
+    "topic": "Economy and Money"
+  },
+  {
+    "en": "Shareholder",
+    "es": "Accionista",
+    "example": "Shareholders expect higher profits.",
+    "weight": 3,
+    "topic": "Economy and Money"
+  },
+  {
+    "en": "Currency",
+    "es": "Moneda",
+    "example": "The euro is a strong currency.",
+    "weight": 3,
+    "topic": "Economy and Money"
+  },
+  {
+    "en": "Exchange rate",
+    "es": "Tipo de cambio",
+    "example": "The exchange rate changes daily.",
+    "weight": 3,
+    "topic": "Economy and Money"
+  },
+  {
+    "en": "Wealth",
+    "es": "Riqueza",
+    "example": "Wealth is not equally distributed.",
+    "weight": 3,
+    "topic": "Economy and Money"
+  },
+  {
+    "en": "Poverty",
+    "es": "Pobreza",
+    "example": "Governments should fight poverty.",
+    "weight": 3,
+    "topic": "Economy and Money"
+  },
+  {
+    "en": "Consumer",
+    "es": "Consumidor",
+    "example": "Consumers are spending less money.",
+    "weight": 3,
+    "topic": "Economy and Money"
+  },
+  {
+    "en": "Supply",
+    "es": "Oferta",
+    "example": "Oil supply has decreased worldwide.",
+    "weight": 3,
+    "topic": "Economy and Money"
+  },
+  {
+    "en": "Demand",
+    "es": "Demanda",
+    "example": "There is high demand for electric cars.",
+    "weight": 3,
+    "topic": "Economy and Money"
+  },
+  {
+    "en": "Trade",
+    "es": "Comercio",
+    "example": "International trade is essential for growth.",
+    "weight": 3,
+    "topic": "Economy and Money"
+  },
+  {
+    "en": "Income tax",
+    "es": "Impuesto sobre la renta",
+    "example": "Income tax affects workers’ salaries.",
+    "weight": 3,
+    "topic": "Economy and Money"
+  },
+  {
+    "en": "VAT (Value Added Tax)",
+    "es": "IVA",
+    "example": "VAT increased the final price.",
+    "weight": 3,
+    "topic": "Economy and Money"
+  },
+  {
+    "en": "Public spending",
+    "es": "Gasto público",
+    "example": "Public spending on healthcare has risen.",
+    "weight": 3,
+    "topic": "Economy and Money"
+  },
+  {
+    "en": "Financial aid",
+    "es": "Ayuda financiera",
+    "example": "Students may receive financial aid.",
+    "weight": 3,
+    "topic": "Economy and Money"
+  },
+  {
+    "en": "Investment",
+    "es": "Inversión",
+    "example": "Renewable energy attracts investment.",
+    "weight": 3,
+    "topic": "Economy and Money"
+  },
+  {
+    "en": "Investor",
+    "es": "Inversor",
+    "example": "Investors look for profitable businesses.",
+    "weight": 3,
+    "topic": "Economy and Money"
+  },
+  {
+    "en": "Savings account",
+    "es": "Cuenta de ahorros",
+    "example": "She keeps her money in a savings account.",
+    "weight": 3,
+    "topic": "Economy and Money"
+  },
+  {
+    "en": "Withdrawal",
+    "es": "Retirada de dinero",
+    "example": "He made a cash withdrawal.",
+    "weight": 3,
+    "topic": "Economy and Money"
+  },
+  {
+    "en": "Deposit",
+    "es": "Depósito",
+    "example": "She deposited €500 into her account.",
+    "weight": 3,
+    "topic": "Economy and Money"
+  },
+  {
+    "en": "Transaction",
+    "es": "Transacción",
+    "example": "Online transactions are fast and secure.",
+    "weight": 3,
+    "topic": "Economy and Money"
+  },
+  {
+    "en": "Fraud",
+    "es": "Fraude",
+    "example": "Banks try to prevent online fraud.",
+    "weight": 3,
+    "topic": "Economy and Money"
+  },
+  {
+    "en": "Counterfeit money",
+    "es": "Dinero falsificado",
+    "example": "Police discovered counterfeit money.",
+    "weight": 3,
+    "topic": "Economy and Money"
+  },
+  {
+    "en": "Financial stability",
+    "es": "Estabilidad financiera",
+    "example": "Saving money provides financial stability.",
+    "weight": 3,
+    "topic": "Economy and Money"
+  },
+  {
+    "en": "Bankruptcy",
+    "es": "Bancarrota",
+    "example": "The company went bankrupt.",
+    "weight": 3,
+    "topic": "Economy and Money"
+  },
+  {
+    "en": "Economic inequality",
+    "es": "Desigualdad económica",
+    "example": "Economic inequality is a global problem.",
+    "weight": 3,
+    "topic": "Economy and Money"
+  },
+  {
+    "en": "Living expenses",
+    "es": "Gastos de vida",
+    "example": "Living expenses are rising quickly.",
+    "weight": 3,
+    "topic": "Economy and Money"
+  },
+  {
+    "en": "Affordable",
+    "es": "Asequible",
+    "example": "Housing is no longer affordable for many people.",
+    "weight": 3,
+    "topic": "Economy and Money"
+  },
+  {
+    "en": "Wealth gap",
+    "es": "Brecha de riqueza",
+    "example": "The wealth gap is becoming wider.",
+    "weight": 3,
+    "topic": "Economy and Money"
+  },
+  {
+    "en": "Financial literacy",
+    "es": "Educación financiera",
+    "example": "Schools should teach financial literacy.",
+    "weight": 3,
+    "topic": "Economy and Money"
+  },
+  {
+    "en": "Subsidy",
+    "es": "Subvención",
+    "example": "Farmers receive government subsidies.",
+    "weight": 3,
+    "topic": "Economy and Money"
+  },
+  {
+    "en": "Revenue",
+    "es": "Ingresos",
+    "example": "The company’s revenue increased by 20%.",
+    "weight": 3,
+    "topic": "Economy and Money"
+  },
+  {
+    "en": "Economic policy",
+    "es": "Política económica",
+    "example": "The government introduced a new economic policy.",
+    "weight": 3,
+    "topic": "Economy and Money"
+  },
+  {
+    "en": "Global warming",
+    "es": "Calentamiento global",
+    "example": "Global warming causes extreme temperatures.",
+    "weight": 4,
+    "topic": "Environment and Climate Change"
+  },
+  {
+    "en": "Pollution",
+    "es": "Contaminación",
+    "example": "Air pollution is a serious problem in cities.",
+    "weight": 4,
+    "topic": "Environment and Climate Change"
+  },
+  {
+    "en": "Greenhouse gases",
+    "es": "Gases de efecto invernadero",
+    "example": "Factories emit greenhouse gases.",
+    "weight": 4,
+    "topic": "Environment and Climate Change"
+  },
+  {
+    "en": "Carbon footprint",
+    "es": "Huella de carbono",
+    "example": "Taking public transport reduces your carbon footprint.",
+    "weight": 4,
+    "topic": "Environment and Climate Change"
+  },
+  {
+    "en": "Renewable energy",
+    "es": "Energía renovable",
+    "example": "Solar power is a renewable energy source.",
+    "weight": 4,
+    "topic": "Environment and Climate Change"
+  },
+  {
+    "en": "Fossil fuels",
+    "es": "Combustibles fósiles",
+    "example": "Fossil fuels contribute to climate change.",
+    "weight": 4,
+    "topic": "Environment and Climate Change"
+  },
+  {
+    "en": "Deforestation",
+    "es": "Deforestación",
+    "example": "Deforestation destroys natural habitats.",
+    "weight": 4,
+    "topic": "Environment and Climate Change"
+  },
+  {
+    "en": "Waste",
+    "es": "Residuos",
+    "example": "Plastic waste pollutes the oceans.",
+    "weight": 4,
+    "topic": "Environment and Climate Change"
+  },
+  {
+    "en": "Sustainability",
+    "es": "Sostenibilidad",
+    "example": "Sustainability should be a global priority.",
+    "weight": 4,
+    "topic": "Environment and Climate Change"
+  },
+  {
+    "en": "Biodiversity",
+    "es": "Biodiversidad",
+    "example": "The Amazon rainforest has rich biodiversity.",
+    "weight": 4,
+    "topic": "Environment and Climate Change"
+  },
+  {
+    "en": "Endangered species",
+    "es": "Especies en peligro de extinción",
+    "example": "Many endangered species need protection.",
+    "weight": 4,
+    "topic": "Environment and Climate Change"
+  },
+  {
+    "en": "Ecosystem",
+    "es": "Ecosistema",
+    "example": "Human activity damages ecosystems.",
+    "weight": 4,
+    "topic": "Environment and Climate Change"
+  },
+  {
+    "en": "Drought",
+    "es": "Sequía",
+    "example": "Farmers suffered because of the drought.",
+    "weight": 4,
+    "topic": "Environment and Climate Change"
+  },
+  {
+    "en": "Flood",
+    "es": "Inundación",
+    "example": "Heavy rain caused severe floods.",
+    "weight": 4,
+    "topic": "Environment and Climate Change"
+  },
+  {
+    "en": "Wildfire",
+    "es": "Incendio forestal",
+    "example": "Wildfires are becoming more frequent.",
+    "weight": 4,
+    "topic": "Environment and Climate Change"
+  },
+  {
+    "en": "Heatwave",
+    "es": "Ola de calor",
+    "example": "Europe experienced an intense heatwave last summer.",
+    "weight": 4,
+    "topic": "Environment and Climate Change"
+  },
+  {
+    "en": "Melting ice caps",
+    "es": "Deshielo de los casquetes polares",
+    "example": "Melting ice caps raise sea levels.",
+    "weight": 4,
+    "topic": "Environment and Climate Change"
+  },
+  {
+    "en": "Sea level rise",
+    "es": "Subida del nivel del mar",
+    "example": "Coastal cities are threatened by sea level rise.",
+    "weight": 4,
+    "topic": "Environment and Climate Change"
+  },
+  {
+    "en": "Environmentalist",
+    "es": "Ecologista",
+    "example": "Environmentalists demand stronger laws.",
+    "weight": 4,
+    "topic": "Environment and Climate Change"
+  },
+  {
+    "en": "Recycling bin",
+    "es": "Contenedor de reciclaje",
+    "example": "Put paper in the recycling bin.",
+    "weight": 4,
+    "topic": "Environment and Climate Change"
+  },
+  {
+    "en": "Wind turbine",
+    "es": "Aerogenerador",
+    "example": "Wind turbines generate clean electricity.",
+    "weight": 4,
+    "topic": "Environment and Climate Change"
+  },
+  {
+    "en": "Electric vehicle",
+    "es": "Vehículo eléctrico",
+    "example": "Electric vehicles reduce emissions.",
+    "weight": 4,
+    "topic": "Environment and Climate Change"
+  },
+  {
+    "en": "Water shortage",
+    "es": "Escasez de agua",
+    "example": "Some regions suffer from water shortages.",
+    "weight": 4,
+    "topic": "Environment and Climate Change"
+  },
+  {
+    "en": "Litter",
+    "es": "Basura tirada",
+    "example": "Tourists left litter on the beach.",
+    "weight": 4,
+    "topic": "Environment and Climate Change"
+  },
+  {
+    "en": "Single-use plastic",
+    "es": "Plástico de un solo uso",
+    "example": "Many countries are banning single-use plastic.",
+    "weight": 4,
+    "topic": "Environment and Climate Change"
+  },
+  {
+    "en": "Climate activist",
+    "es": "Activista climático",
+    "example": "Climate activists organised a protest.",
+    "weight": 4,
+    "topic": "Environment and Climate Change"
+  },
+  {
+    "en": "Environmental awareness",
+    "es": "Conciencia ambiental",
+    "example": "Schools should promote environmental awareness.",
+    "weight": 4,
+    "topic": "Environment and Climate Change"
+  },
+  {
+    "en": "Sustainable development",
+    "es": "Desarrollo sostenible",
+    "example": "Sustainable development balances growth and conservation.",
+    "weight": 4,
+    "topic": "Environment and Climate Change"
+  },
+  {
+    "en": "Environmental damage",
+    "es": "Daño medioambiental",
+    "example": "Oil spills cause environmental damage.",
+    "weight": 4,
+    "topic": "Environment and Climate Change"
+  },
+  {
+    "en": "Election",
+    "es": "Elección",
+    "example": "The election will take place next month.",
+    "weight": 5,
+    "topic": "Politics and Society"
+  },
+  {
+    "en": "Voter",
+    "es": "Votante",
+    "example": "Young voters are becoming more politically active.",
+    "weight": 5,
+    "topic": "Politics and Society"
+  },
+  {
+    "en": "Political party",
+    "es": "Partido político",
+    "example": "The political party promised economic reforms.",
+    "weight": 5,
+    "topic": "Politics and Society"
+  },
+  {
+    "en": "Freedom of speech",
+    "es": "Libertad de expresión",
+    "example": "Freedom of speech is essential in democracies.",
+    "weight": 5,
+    "topic": "Politics and Society"
+  },
+  {
+    "en": "Unemployment",
+    "es": "Desempleo",
+    "example": "Unemployment is a major social issue.",
+    "weight": 5,
+    "topic": "Politics and Society"
+  },
+  {
+    "en": "Welfare state",
+    "es": "Estado del bienestar",
+    "example": "The welfare state provides social support.",
+    "weight": 5,
+    "topic": "Politics and Society"
+  },
+  {
+    "en": "Public services",
+    "es": "Servicios públicos",
+    "example": "Citizens depend on public services.",
+    "weight": 5,
+    "topic": "Politics and Society"
+  },
+  {
+    "en": "Healthcare system",
+    "es": "Sistema sanitario",
+    "example": "The healthcare system needs more funding.",
+    "weight": 5,
+    "topic": "Politics and Society"
+  },
+  {
+    "en": "Citizenship",
+    "es": "Ciudadanía",
+    "example": "She applied for citizenship.",
+    "weight": 5,
+    "topic": "Politics and Society"
+  },
+  {
+    "en": "Protest",
+    "es": "Protesta",
+    "example": "Thousands joined the protest.",
+    "weight": 5,
+    "topic": "Politics and Society"
+  },
+  {
+    "en": "Demonstration",
+    "es": "Manifestación",
+    "example": "The demonstration was peaceful.",
+    "weight": 5,
+    "topic": "Politics and Society"
+  },
+  {
+    "en": "Campaign",
+    "es": "Campaña",
+    "example": "The campaign focused on climate issues.",
+    "weight": 5,
+    "topic": "Politics and Society"
+  },
+  {
+    "en": "Corruption",
+    "es": "Corrupción",
+    "example": "Corruption damages public trust.",
+    "weight": 5,
+    "topic": "Politics and Society"
+  },
+  {
+    "en": "Censorship",
+    "es": "Censura",
+    "example": "Journalists criticised government censorship.",
+    "weight": 5,
+    "topic": "Politics and Society"
+  },
+  {
+    "en": "Propaganda",
+    "es": "Propaganda",
+    "example": "Propaganda influences public opinion.",
+    "weight": 5,
+    "topic": "Politics and Society"
+  },
+  {
+    "en": "Media coverage",
+    "es": "Cobertura mediática",
+    "example": "The scandal received extensive media coverage.",
+    "weight": 5,
+    "topic": "Politics and Society"
+  },
+  {
+    "en": "Social welfare",
+    "es": "Bienestar social",
+    "example": "Social welfare programs help vulnerable families.",
+    "weight": 5,
+    "topic": "Politics and Society"
+  },
+  {
+    "en": "Taxpayer",
+    "es": "Contribuyente",
+    "example": "Taxpayers fund public infrastructure.",
+    "weight": 5,
+    "topic": "Politics and Society"
+  },
+  {
+    "en": "Trade union",
+    "es": "Sindicato",
+    "example": "Trade unions defend workers’ rights.",
+    "weight": 5,
+    "topic": "Politics and Society"
+  },
+  {
+    "en": "Strike",
+    "es": "Huelga",
+    "example": "Workers organised a strike.",
+    "weight": 5,
+    "topic": "Politics and Society"
+  },
+  {
+    "en": "Balanced diet",
+    "es": "Dieta equilibrada",
+    "example": "A balanced diet helps prevent diseases.",
+    "weight": 5,
+    "topic": "Politics and Society"
+  },
+  {
+    "en": "Overweight",
+    "es": "Sobrepeso",
+    "example": "Being overweight can affect your health.",
+    "weight": 6,
+    "topic": "Physical and Mental Health"
+  },
+  {
+    "en": "Malnutrition",
+    "es": "Desnutrición",
+    "example": "Malnutrition remains a global issue.",
+    "weight": 6,
+    "topic": "Physical and Mental Health"
+  },
+  {
+    "en": "Fitness",
+    "es": "Estado físico",
+    "example": "She wants to improve her fitness.",
+    "weight": 6,
+    "topic": "Physical and Mental Health"
+  },
+  {
+    "en": "Workout",
+    "es": "Entrenamiento",
+    "example": "He does a workout every morning.",
+    "weight": 6,
+    "topic": "Physical and Mental Health"
+  },
+  {
+    "en": "Strength training",
+    "es": "Entrenamiento de fuerza",
+    "example": "Strength training builds muscle.",
+    "weight": 6,
+    "topic": "Physical and Mental Health"
+  },
+  {
+    "en": "Endurance",
+    "es": "Resistencia",
+    "example": "Running improves endurance.",
+    "weight": 6,
+    "topic": "Physical and Mental Health"
+  },
+  {
+    "en": "Injury",
+    "es": "Lesión",
+    "example": "He suffered a knee injury.",
+    "weight": 6,
+    "topic": "Physical and Mental Health"
+  },
+  {
+    "en": "Recovery",
+    "es": "Recuperación",
+    "example": "Recovery after surgery took several weeks.",
+    "weight": 6,
+    "topic": "Physical and Mental Health"
+  },
+  {
+    "en": "Disease",
+    "es": "Enfermedad",
+    "example": "Scientists are researching rare diseases.",
+    "weight": 6,
+    "topic": "Physical and Mental Health"
+  },
+  {
+    "en": "Chronic illness",
+    "es": "Enfermedad crónica",
+    "example": "Diabetes is a chronic illness.",
+    "weight": 6,
+    "topic": "Physical and Mental Health"
+  },
+  {
+    "en": "Burnout",
+    "es": "Agotamiento extremo / burnout",
+    "example": "Many employees suffer from burnout.",
+    "weight": 6,
+    "topic": "Physical and Mental Health"
+  },
+  {
+    "en": "Self-esteem",
+    "es": "Autoestima",
+    "example": "Exercise can improve self-esteem.",
+    "weight": 6,
+    "topic": "Physical and Mental Health"
+  },
+  {
+    "en": "Painkiller",
+    "es": "Analgésico",
+    "example": "She took a painkiller for her headache.",
+    "weight": 6,
+    "topic": "Physical and Mental Health"
+  },
+  {
+    "en": "Healthcare",
+    "es": "Atención sanitaria",
+    "example": "Healthcare should be accessible to everyone.",
+    "weight": 6,
+    "topic": "Physical and Mental Health"
+  },
+  {
+    "en": "Medical check-up",
+    "es": "Revisión médica",
+    "example": "I have a medical check-up tomorrow.",
+    "weight": 6,
+    "topic": "Physical and Mental Health"
+  },
+  {
+    "en": "Sleep deprivation",
+    "es": "Falta de sueño",
+    "example": "Sleep deprivation affects concentration.",
+    "weight": 6,
+    "topic": "Physical and Mental Health"
+  },
+  {
+    "en": "Insomnia",
+    "es": "Insomnio",
+    "example": "Stress can cause insomnia.",
+    "weight": 6,
+    "topic": "Physical and Mental Health"
+  },
+  {
+    "en": "Rehabilitation",
+    "es": "Rehabilitación",
+    "example": "He attended rehabilitation after the accident.",
+    "weight": 6,
+    "topic": "Physical and Mental Health"
+  },
+  {
+    "en": "Disability",
+    "es": "Discapacidad",
+    "example": "Public spaces should be accessible for people with disabilities.",
+    "weight": 6,
+    "topic": "Physical and Mental Health"
+  },
+  {
+    "en": "Life expectancy",
+    "es": "Esperanza de vida",
+    "example": "Life expectancy has increased over the years.",
+    "weight": 6,
+    "topic": "Physical and Mental Health"
+  },
+  {
+    "en": "Medical breakthrough",
+    "es": "Avance médico",
+    "example": "The vaccine was considered a medical breakthrough.",
+    "weight": 6,
+    "topic": "Physical and Mental Health"
+  },
+  {
+    "en": "Innovation hub",
+    "es": "Centro de innovación",
+    "example": "The city became an innovation hub.",
+    "weight": 7,
+    "topic": "Media and Social Networks"
+  },
+  {
+    "en": "Media outlet",
+    "es": "Medio de comunicación",
+    "example": "Independent media outlets play a crucial role in democracy.",
+    "weight": 7,
+    "topic": "Media and Social Networks"
+  },
+  {
+    "en": "Mainstream media",
+    "es": "Medios tradicionales",
+    "example": "Many people distrust mainstream media nowadays.",
+    "weight": 7,
+    "topic": "Media and Social Networks"
+  },
+  {
+    "en": "News coverage",
+    "es": "Cobertura informativa",
+    "example": "The war received extensive news coverage.",
+    "weight": 7,
+    "topic": "Media and Social Networks"
+  },
+  {
+    "en": "Investigative journalism",
+    "es": "Periodismo de investigación",
+    "example": "Investigative journalism exposes corruption scandals.",
+    "weight": 7,
+    "topic": "Media and Social Networks"
+  },
+  {
+    "en": "Misinformation",
+    "es": "Desinformación",
+    "example": "Misinformation spreads rapidly online.",
+    "weight": 7,
+    "topic": "Media and Social Networks"
+  },
+  {
+    "en": "Disinformation",
+    "es": "Desinformación deliberada",
+    "example": "Disinformation campaigns can influence elections.",
+    "weight": 7,
+    "topic": "Media and Social Networks"
+  },
+  {
+    "en": "Fact-checking",
+    "es": "Verificación de hechos",
+    "example": "Fact-checking is essential in modern journalism.",
+    "weight": 7,
+    "topic": "Media and Social Networks"
+  },
+  {
+    "en": "Algorithm-driven content",
+    "es": "Contenido guiado por algoritmos",
+    "example": "Algorithm-driven content affects users’ opinions.",
+    "weight": 7,
+    "topic": "Media and Social Networks"
+  },
+  {
+    "en": "Surveillance",
+    "es": "Vigilancia",
+    "example": "Online surveillance threatens civil liberties.",
+    "weight": 7,
+    "topic": "Media and Social Networks"
+  },
+  {
+    "en": "Digital footprint",
+    "es": "Huella digital",
+    "example": "Employers sometimes examine applicants’ digital footprints.",
+    "weight": 7,
+    "topic": "Media and Social Networks"
+  },
+  {
+    "en": "Viral content",
+    "es": "Contenido viral",
+    "example": "Viral content spreads within hours.",
+    "weight": 7,
+    "topic": "Media and Social Networks"
+  },
+  {
+    "en": "Online harassment",
+    "es": "Acoso online",
+    "example": "Many influencers experience online harassment.",
+    "weight": 7,
+    "topic": "Media and Social Networks"
+  },
+  {
+    "en": "Defamation",
+    "es": "Difamación",
+    "example": "Celebrities may sue newspapers for defamation.",
+    "weight": 7,
+    "topic": "Media and Social Networks"
+  },
+  {
+    "en": "Freedom of expression",
+    "es": "Libertad de expresión",
+    "example": "Freedom of expression must be protected.",
+    "weight": 7,
+    "topic": "Media and Social Networks"
+  },
+  {
+    "en": "Censorship",
+    "es": "Censura",
+    "example": "Journalists condemned government censorship.",
+    "weight": 7,
+    "topic": "Media and Social Networks"
+  },
+  {
+    "en": "Public discourse",
+    "es": "Debate público",
+    "example": "Social media has transformed public discourse.",
+    "weight": 7,
+    "topic": "Media and Social Networks"
+  },
+  {
+    "en": "Target audience",
+    "es": "Público objetivo",
+    "example": "The campaign targeted a younger audience.",
+    "weight": 7,
+    "topic": "Media and Social Networks"
+  },
+  {
+    "en": "Sponsored content",
+    "es": "Contenido patrocinado",
+    "example": "Influencers must disclose sponsored content.",
+    "weight": 7,
+    "topic": "Media and Social Networks"
+  },
+  {
+    "en": "Brand endorsement",
+    "es": "Promoción de marca",
+    "example": "Athletes earn money through brand endorsements.",
+    "weight": 7,
+    "topic": "Media and Social Networks"
+  },
+  {
+    "en": "Clickbait headline",
+    "es": "Titular clickbait",
+    "example": "Clickbait headlines often mislead readers.",
+    "weight": 7,
+    "topic": "Media and Social Networks"
+  },
+  {
+    "en": "Newsworthiness",
+    "es": "Interés periodístico",
+    "example": "Editors decide what has newsworthiness.",
+    "weight": 7,
+    "topic": "Media and Social Networks"
+  },
+  {
+    "en": "Press freedom",
+    "es": "Libertad de prensa",
+    "example": "Press freedom is limited in some countries.",
+    "weight": 7,
+    "topic": "Media and Social Networks"
+  },
+  {
+    "en": "Livestreaming",
+    "es": "Transmisión en directo",
+    "example": "Livestreaming has become extremely popular.",
+    "weight": 7,
+    "topic": "Media and Social Networks"
+  },
+  {
+    "en": "Public backlash",
+    "es": "Reacción negativa del público",
+    "example": "The company faced public backlash after the scandal.",
+    "weight": 7,
+    "topic": "Media and Social Networks"
+  },
+  {
+    "en": "Information overload",
+    "es": "Sobrecarga informativa",
+    "example": "Constant notifications cause information overload.",
+    "weight": 7,
+    "topic": "Media and Social Networks"
+  },
+  {
+    "en": "User-generated content",
+    "es": "Contenido generado por usuarios",
+    "example": "TikTok relies heavily on user-generated content.",
+    "weight": 7,
+    "topic": "Media and Social Networks"
+  },
+  {
+    "en": "Media consumption",
+    "es": "Consumo de medios",
+    "example": "Media consumption habits are changing rapidly.",
+    "weight": 7,
+    "topic": "Media and Social Networks"
+  },
+  {
+    "en": "Biased reporting",
+    "es": "Información sesgada",
+    "example": "The channel was accused of biased reporting.",
+    "weight": 7,
+    "topic": "Media and Social Networks"
+  },
+  {
+    "en": "Law enforcement",
+    "es": "Fuerzas del orden",
+    "example": "Law enforcement agencies are investigating the case.",
+    "weight": 8,
+    "topic": "Crime and Justice"
+  },
+  {
+    "en": "Criminal offence",
+    "es": "Delito penal",
+    "example": "Fraud is considered a serious criminal offence.",
+    "weight": 8,
+    "topic": "Crime and Justice"
+  },
+  {
+    "en": "Felony",
+    "es": "Delito grave",
+    "example": "The suspect was charged with a felony.",
+    "weight": 8,
+    "topic": "Crime and Justice"
+  },
+  {
+    "en": "Misdemeanour",
+    "es": "Delito menor",
+    "example": "Shoplifting is usually treated as a misdemeanour.",
+    "weight": 8,
+    "topic": "Crime and Justice"
+  },
+  {
+    "en": "Perpetrator",
+    "es": "Autor del delito",
+    "example": "Police identified the perpetrator quickly.",
+    "weight": 8,
+    "topic": "Crime and Justice"
+  },
+  {
+    "en": "Eyewitness",
+    "es": "Testigo presencial",
+    "example": "An eyewitness described the robbery.",
+    "weight": 8,
+    "topic": "Crime and Justice"
+  },
+  {
+    "en": "Interrogation",
+    "es": "Interrogatorio",
+    "example": "The suspect remained silent during the interrogation.",
+    "weight": 8,
+    "topic": "Crime and Justice"
+  },
+  {
+    "en": "Surveillance footage",
+    "es": "Imágenes de vigilancia",
+    "example": "Surveillance footage captured the incident.",
+    "weight": 8,
+    "topic": "Crime and Justice"
+  },
+  {
+    "en": "Fingerprints",
+    "es": "Huellas dactilares",
+    "example": "Detectives found fingerprints on the weapon.",
+    "weight": 8,
+    "topic": "Crime and Justice"
+  },
+  {
+    "en": "Alibi",
+    "es": "Coartada",
+    "example": "He had a solid alibi for the night of the murder.",
+    "weight": 8,
+    "topic": "Crime and Justice"
+  },
+  {
+    "en": "Prosecutor",
+    "es": "Fiscal",
+    "example": "The prosecutor demanded a harsh sentence.",
+    "weight": 8,
+    "topic": "Crime and Justice"
+  },
+  {
+    "en": "Defence attorney",
+    "es": "Abogado defensor",
+    "example": "The defence attorney argued that the evidence was weak.",
+    "weight": 8,
+    "topic": "Crime and Justice"
+  },
+  {
+    "en": "Trial",
+    "es": "Juicio",
+    "example": "The trial attracted media attention.",
+    "weight": 8,
+    "topic": "Crime and Justice"
+  },
+  {
+    "en": "Testimony",
+    "es": "Testimonio",
+    "example": "Her testimony was convincing.",
+    "weight": 8,
+    "topic": "Crime and Justice"
+  },
+  {
+    "en": "Verdict",
+    "es": "Veredicto",
+    "example": "The jury reached a guilty verdict.",
+    "weight": 8,
+    "topic": "Crime and Justice"
+  },
+  {
+    "en": "Sentence",
+    "es": "Condena",
+    "example": "The judge imposed a ten-year sentence.",
+    "weight": 8,
+    "topic": "Crime and Justice"
+  },
+  {
+    "en": "Life imprisonment",
+    "es": "Cadena perpetua",
+    "example": "The criminal received life imprisonment.",
+    "weight": 8,
+    "topic": "Crime and Justice"
+  },
+  {
+    "en": "Death penalty",
+    "es": "Pena de muerte",
+    "example": "Many countries have abolished the death penalty.",
+    "weight": 8,
+    "topic": "Crime and Justice"
+  },
+  {
+    "en": "Probation",
+    "es": "Libertad condicional",
+    "example": "He was released on probation.",
+    "weight": 8,
+    "topic": "Crime and Justice"
+  },
+  {
+    "en": "Parole",
+    "es": "Libertad vigilada",
+    "example": "The prisoner applied for parole.",
+    "weight": 8,
+    "topic": "Crime and Justice"
+  },
+  {
+    "en": "Money laundering",
+    "es": "Blanqueo de capitales",
+    "example": "The businessman was accused of money laundering.",
+    "weight": 8,
+    "topic": "Crime and Justice"
+  },
+  {
+    "en": "Tax evasion",
+    "es": "Evasión fiscal",
+    "example": "Tax evasion is punishable by law.",
+    "weight": 8,
+    "topic": "Crime and Justice"
+  },
+  {
+    "en": "Bribery",
+    "es": "Soborno",
+    "example": "Officials were arrested for bribery.",
+    "weight": 8,
+    "topic": "Crime and Justice"
+  },
+  {
+    "en": "Corruption",
+    "es": "Corrupción",
+    "example": "Corruption undermines public trust.",
+    "weight": 8,
+    "topic": "Crime and Justice"
+  },
+  {
+    "en": "Fraud",
+    "es": "Fraude",
+    "example": "Online fraud has become increasingly common.",
+    "weight": 8,
+    "topic": "Crime and Justice"
+  },
+  {
+    "en": "Identity theft",
+    "es": "Robo de identidad",
+    "example": "Identity theft can ruin people’s finances.",
+    "weight": 8,
+    "topic": "Crime and Justice"
+  },
+  {
+    "en": "Drug trafficking",
+    "es": "Tráfico de drogas",
+    "example": "Drug trafficking is a global issue.",
+    "weight": 8,
+    "topic": "Crime and Justice"
+  },
+  {
+    "en": "Human trafficking",
+    "es": "Trata de personas",
+    "example": "Human trafficking violates human rights.",
+    "weight": 8,
+    "topic": "Crime and Justice"
+  },
+  {
+    "en": "Domestic violence",
+    "es": "Violencia doméstica",
+    "example": "Victims of domestic violence need support.",
+    "weight": 8,
+    "topic": "Crime and Justice"
+  },
+  {
+    "en": "Assault",
+    "es": "Agresión",
+    "example": "He was charged with assault.",
+    "weight": 8,
+    "topic": "Crime and Justice"
+  },
+  {
+    "en": "Burglary",
+    "es": "Robo con allanamiento",
+    "example": "The burglary occurred during the night.",
+    "weight": 8,
+    "topic": "Crime and Justice"
+  },
+  {
+    "en": "Armed robbery",
+    "es": "Robo a mano armada",
+    "example": "The bank suffered an armed robbery.",
+    "weight": 8,
+    "topic": "Crime and Justice"
+  },
+  {
+    "en": "Homicide",
+    "es": "Homicidio",
+    "example": "Detectives specialised in homicide cases.",
+    "weight": 8,
+    "topic": "Crime and Justice"
+  },
+  {
+    "en": "Manslaughter",
+    "es": "Homicidio involuntario",
+    "example": "He was convicted of manslaughter.",
+    "weight": 8,
+    "topic": "Crime and Justice"
+  },
+  {
+    "en": "Self-defence",
+    "es": "Defensa propia",
+    "example": "She claimed she acted in self-defence.",
+    "weight": 8,
+    "topic": "Crime and Justice"
+  },
+  {
+    "en": "Court ruling",
+    "es": "Fallo judicial",
+    "example": "The court ruling caused controversy.",
+    "weight": 8,
+    "topic": "Crime and Justice"
+  },
+  {
+    "en": "Human rights violation",
+    "es": "Violación de derechos humanos",
+    "example": "The organisation condemned human rights violations.",
+    "weight": 8,
+    "topic": "Crime and Justice"
+  },
+  {
+    "en": "Crime rate",
+    "es": "Índice de criminalidad",
+    "example": "Crime rates have fallen in recent years.",
+    "weight": 8,
+    "topic": "Crime and Justice"
+  },
+  {
+    "en": "Murder",
+    "es": "Asesinato",
+    "example": "The suspect was arrested for murder.",
+    "weight": 8,
+    "topic": "Crime and Justice"
+  },
+  {
+    "en": "Attempted murder",
+    "es": "Intento de asesinato",
+    "example": "He was charged with attempted murder.",
+    "weight": 8,
+    "topic": "Crime and Justice"
+  },
+  {
+    "en": "Kidnapping",
+    "es": "Secuestro",
+    "example": "Kidnapping is considered a serious offence.",
+    "weight": 8,
+    "topic": "Crime and Justice"
+  },
+  {
+    "en": "Abduction",
+    "es": "Rapto / secuestro",
+    "example": "The police investigated the child’s abduction.",
+    "weight": 8,
+    "topic": "Crime and Justice"
+  },
+  {
+    "en": "Rape",
+    "es": "Violación",
+    "example": "The victim reported the rape immediately.",
+    "weight": 8,
+    "topic": "Crime and Justice"
+  },
+  {
+    "en": "Sexual assault",
+    "es": "Agresión sexual",
+    "example": "The organisation supports victims of sexual assault.",
+    "weight": 8,
+    "topic": "Crime and Justice"
+  },
+  {
+    "en": "Harassment",
+    "es": "Acoso",
+    "example": "Online harassment is increasingly common.",
+    "weight": 8,
+    "topic": "Crime and Justice"
+  },
+  {
+    "en": "Stalking",
+    "es": "Acoso obsesivo",
+    "example": "Stalking can seriously affect mental health.",
+    "weight": 8,
+    "topic": "Crime and Justice"
+  },
+  {
+    "en": "Blackmail",
+    "es": "Chantaje",
+    "example": "He threatened her with blackmail.",
+    "weight": 8,
+    "topic": "Crime and Justice"
+  },
+  {
+    "en": "Extortion",
+    "es": "Extorsión",
+    "example": "The gang was involved in extortion.",
+    "weight": 8,
+    "topic": "Crime and Justice"
+  },
+  {
+    "en": "Smuggling",
+    "es": "Contrabando",
+    "example": "Smuggling illegal goods is punishable by law.",
+    "weight": 8,
+    "topic": "Crime and Justice"
+  },
+  {
+    "en": "Arson",
+    "es": "Incendio provocado",
+    "example": "The warehouse fire was caused by arson.",
+    "weight": 8,
+    "topic": "Crime and Justice"
+  },
+  {
+    "en": "Theft",
+    "es": "Robo",
+    "example": "Theft rates have risen recently.",
+    "weight": 8,
+    "topic": "Crime and Justice"
+  },
+  {
+    "en": "Shoplifting",
+    "es": "Hurto en tiendas",
+    "example": "She was caught shoplifting.",
+    "weight": 8,
+    "topic": "Crime and Justice"
+  },
+  {
+    "en": "Robbery",
+    "es": "Robo con violencia",
+    "example": "The robbery occurred late at night.",
+    "weight": 8,
+    "topic": "Crime and Justice"
+  },
+  {
+    "en": "Armed robbery",
+    "es": "Robo a mano armada",
+    "example": "Two men committed an armed robbery.",
+    "weight": 8,
+    "topic": "Crime and Justice"
+  },
+  {
+    "en": "Mugging",
+    "es": "Atraco callejero",
+    "example": "He was the victim of a mugging.",
+    "weight": 8,
+    "topic": "Crime and Justice"
+  },
+  {
+    "en": "Assault",
+    "es": "Agresión",
+    "example": "The footballer was accused of assault.",
+    "weight": 8,
+    "topic": "Crime and Justice"
+  },
+  {
+    "en": "Battery",
+    "es": "Agresión física",
+    "example": "He faced charges of battery.",
+    "weight": 8,
+    "topic": "Crime and Justice"
+  },
+  {
+    "en": "Child abuse",
+    "es": "Maltrato infantil",
+    "example": "Authorities must prevent child abuse.",
+    "weight": 8,
+    "topic": "Crime and Justice"
+  },
+  {
+    "en": "Human trafficking",
+    "es": "Trata de personas",
+    "example": "Human trafficking affects millions worldwide.",
+    "weight": 8,
+    "topic": "Crime and Justice"
+  },
+  {
+    "en": "Scamming",
+    "es": "Estafa",
+    "example": "Online scamming is becoming more sophisticated.",
+    "weight": 8,
+    "topic": "Crime and Justice"
+  },
+  {
+    "en": "Bribery",
+    "es": "Soborno",
+    "example": "The politician was accused of bribery.",
+    "weight": 8,
+    "topic": "Crime and Justice"
+  },
+  {
+    "en": "Riot",
+    "es": "Disturbio",
+    "example": "The protest turned into a riot.",
+    "weight": 8,
+    "topic": "Crime and Justice"
+  },
+  {
+    "en": "Cultural heritage",
+    "es": "Patrimonio cultural",
+    "example": "Italy is famous for its cultural heritage.",
+    "weight": 9,
+    "topic": "Travel and Culture"
+  },
+  {
+    "en": "Customs",
+    "es": "Costumbres",
+    "example": "Travellers should respect local customs.",
+    "weight": 9,
+    "topic": "Travel and Culture"
+  },
+  {
+    "en": "Cultural awareness",
+    "es": "Conciencia cultural",
+    "example": "Cultural awareness is important when travelling abroad.",
+    "weight": 9,
+    "topic": "Travel and Culture"
+  },
+  {
+    "en": "Cultural exchange",
+    "es": "Intercambio cultural",
+    "example": "Erasmus promotes cultural exchange.",
+    "weight": 9,
+    "topic": "Travel and Culture"
+  },
+  {
+    "en": "Local cuisine",
+    "es": "Gastronomía local",
+    "example": "Tourists enjoyed the local cuisine.",
+    "weight": 9,
+    "topic": "Travel and Culture"
+  },
+  {
+    "en": "Traditional attire",
+    "es": "Vestimenta tradicional",
+    "example": "The festival featured traditional attire.",
+    "weight": 9,
+    "topic": "Travel and Culture"
+  },
+  {
+    "en": "Landmark",
+    "es": "Monumento emblemático",
+    "example": "The Eiffel Tower is a famous landmark.",
+    "weight": 9,
+    "topic": "Travel and Culture"
+  },
+  {
+    "en": "Sightseeing",
+    "es": "Turismo / visitas turísticas",
+    "example": "We spent the day sightseeing in Rome.",
+    "weight": 9,
+    "topic": "Travel and Culture"
+  },
+  {
+    "en": "Backpacking",
+    "es": "Viajar de mochilero",
+    "example": "Backpacking across Europe is very popular.",
+    "weight": 9,
+    "topic": "Travel and Culture"
+  },
+  {
+    "en": "Off the beaten track",
+    "es": "Fuera de las rutas turísticas",
+    "example": "We explored villages off the beaten track.",
+    "weight": 9,
+    "topic": "Travel and Culture"
+  },
+  {
+    "en": "Customs control",
+    "es": "Control aduanero",
+    "example": "We went through customs control quickly.",
+    "weight": 9,
+    "topic": "Travel and Culture"
+  },
+  {
+    "en": "Tourist trap",
+    "es": "Trampa para turistas",
+    "example": "That restaurant is just a tourist trap.",
+    "weight": 9,
+    "topic": "Travel and Culture"
+  },
+  {
+    "en": "Travel insurance",
+    "es": "Seguro de viaje",
+    "example": "Travel insurance covered the medical expenses.",
+    "weight": 9,
+    "topic": "Travel and Culture"
+  },
+  {
+    "en": "Language barrier",
+    "es": "Barrera idiomática",
+    "example": "The language barrier caused misunderstandings.",
+    "weight": 9,
+    "topic": "Travel and Culture"
+  },
+  {
+    "en": "Historical landmark",
+    "es": "Monumento histórico",
+    "example": "The city has many historical landmarks.",
+    "weight": 9,
+    "topic": "Travel and Culture"
+  },
+  {
+    "en": "Fine arts",
+    "es": "Bellas artes",
+    "example": "She studied fine arts at university.",
+    "weight": 9,
+    "topic": "Travel and Culture"
+  },
+  {
+    "en": "Folk tradition",
+    "es": "Tradición popular",
+    "example": "Folk traditions are preserved during festivals.",
+    "weight": 9,
+    "topic": "Travel and Culture"
+  },
+  {
+    "en": "Pilgrimage",
+    "es": "Peregrinación",
+    "example": "Thousands complete the pilgrimage every year.",
+    "weight": 9,
+    "topic": "Travel and Culture"
+  },
+  {
+    "en": "UNESCO World Heritage Site",
+    "es": "Patrimonio Mundial de la UNESCO",
+    "example": "The monument became a UNESCO World Heritage Site.",
+    "weight": 9,
+    "topic": "Travel and Culture"
+  },
+  {
+    "en": "Mass tourism",
+    "es": "Turismo masivo",
+    "example": "Mass tourism damages historic cities.",
+    "weight": 9,
+    "topic": "Travel and Culture"
+  },
+  {
+    "en": "Scenic route",
+    "es": "Ruta panorámica",
+    "example": "We drove along a scenic route.",
+    "weight": 9,
+    "topic": "Travel and Culture"
+  },
+  {
+    "en": "Travel companion",
+    "es": "Compañero de viaje",
+    "example": "A good travel companion makes trips more enjoyable.",
+    "weight": 9,
+    "topic": "Travel and Culture"
+  },
+  {
+    "en": "Wanderlust",
+    "es": "Deseo de viajar",
+    "example": "Her wanderlust inspired her to travel constantly.",
+    "weight": 9,
+    "topic": "Travel and Culture"
+  },
+  {
+    "en": "Acquaintance",
+    "es": "Conocido/a",
+    "example": "He is more of an acquaintance than a close friend.",
+    "weight": 9,
+    "topic": "Travel and Culture"
+  },
+  {
+    "en": "Bond",
+    "es": "Vínculo",
+    "example": "They share a strong emotional bond.",
+    "weight": 10,
+    "topic": "Emotions and Opinions"
+  },
+  {
+    "en": "Betrayal",
+    "es": "Traición",
+    "example": "Her betrayal deeply hurt him.",
+    "weight": 10,
+    "topic": "Emotions and Opinions"
+  },
+  {
+    "en": "Grief",
+    "es": "Dolor / duelo",
+    "example": "She experienced deep grief after the loss.",
+    "weight": 10,
+    "topic": "Emotions and Opinions"
+  },
+  {
+    "en": "Loneliness",
+    "es": "Soledad",
+    "example": "Social media may increase loneliness.",
+    "weight": 10,
+    "topic": "Emotions and Opinions"
+  },
+  {
+    "en": "Jealousy",
+    "es": "Celos",
+    "example": "Jealousy can destroy relationships.",
+    "weight": 10,
+    "topic": "Emotions and Opinions"
+  },
+  {
+    "en": "Guilt",
+    "es": "Culpa",
+    "example": "He felt guilty about lying.",
+    "weight": 10,
+    "topic": "Emotions and Opinions"
+  },
+  {
+    "en": "Embarrassment",
+    "es": "Vergüenza",
+    "example": "She blushed with embarrassment.",
+    "weight": 10,
+    "topic": "Emotions and Opinions"
+  },
+  {
+    "en": "Argumentative",
+    "es": "Discutidor",
+    "example": "He can be quite argumentative sometimes.",
+    "weight": 10,
+    "topic": "Emotions and Opinions"
+  },
+  {
+    "en": "Outgoing",
+    "es": "Extrovertido",
+    "example": "She is friendly and outgoing.",
+    "weight": 10,
+    "topic": "Emotions and Opinions"
+  },
+  {
+    "en": "Reserved",
+    "es": "Reservado",
+    "example": "He tends to be quiet and reserved.",
+    "weight": 10,
+    "topic": "Emotions and Opinions"
+  },
+  {
+    "en": "Reliable",
+    "es": "Fiable",
+    "example": "A reliable friend is hard to find.",
+    "weight": 10,
+    "topic": "Emotions and Opinions"
+  },
+  {
+    "en": "Self-centred",
+    "es": "Egoísta / egocéntrico",
+    "example": "Nobody likes self-centred people.",
+    "weight": 10,
+    "topic": "Emotions and Opinions"
+  },
+  {
+    "en": "Mature",
+    "es": "Maduro",
+    "example": "She handled the situation in a mature way.",
+    "weight": 10,
+    "topic": "Emotions and Opinions"
+  },
+  {
+    "en": "Peer pressure",
+    "es": "Presión de grupo",
+    "example": "Peer pressure affects teenagers strongly.",
+    "weight": 10,
+    "topic": "Emotions and Opinions"
+  },
+  {
+    "en": "Misunderstanding",
+    "es": "Malentendido",
+    "example": "A misunderstanding caused the argument.",
+    "weight": 10,
+    "topic": "Emotions and Opinions"
+  },
+  {
+    "en": "Overwhelmed",
+    "es": "Abrumado",
+    "example": "She felt overwhelmed by stress.",
+    "weight": 10,
+    "topic": "Emotions and Opinions"
+  },
+  {
+    "en": "Relieved",
+    "es": "Aliviado",
+    "example": "I felt relieved after the interview.",
+    "weight": 10,
+    "topic": "Emotions and Opinions"
+  },
+  {
+    "en": "Attachment",
+    "es": "Apego",
+    "example": "Children develop emotional attachment to their parents.",
+    "weight": 10,
+    "topic": "Emotions and Opinions"
+  },
+  {
+    "en": "Break-up",
+    "es": "Ruptura",
+    "example": "The break-up affected him deeply.",
+    "weight": 10,
+    "topic": "Emotions and Opinions"
+  },
+  {
+    "en": "Fall out with someone",
+    "es": "Enfadarse con alguien",
+    "example": "She fell out with her best friend.",
+    "weight": 10,
+    "topic": "Emotions and Opinions"
+  },
+  {
+    "en": "Get along with",
+    "es": "Llevarse bien con",
+    "example": "I get along well with my colleagues.",
+    "weight": 10,
+    "topic": "Emotions and Opinions"
+  },
+  {
+    "en": "Look up to",
+    "es": "Admirar",
+    "example": "Many teenagers look up to influencers.",
+    "weight": 10,
+    "topic": "Emotions and Opinions"
+  },
+  {
+    "en": "Hold a grudge",
+    "es": "Guardar rencor",
+    "example": "It is unhealthy to hold a grudge forever.",
+    "weight": 10,
+    "topic": "Emotions and Opinions"
+  },
+  {
+    "en": "Make up",
+    "es": "Reconciliarse",
+    "example": "They argued but later made up.",
+    "weight": 10,
+    "topic": "Emotions and Opinions"
+  },
+  {
+    "en": "Sense of belonging",
+    "es": "Sentido de pertenencia",
+    "example": "Clubs give students a sense of belonging.",
+    "weight": 10,
+    "topic": "Emotions and Opinions"
+  },
+  {
+    "en": "Standpoint",
+    "es": "Postura",
+    "example": "From an ethical standpoint, the decision was questionable.",
+    "weight": 10,
+    "topic": "Emotions and Opinions"
+  },
+  {
+    "en": "Counterargument",
+    "es": "Contraargumento",
+    "example": "The speaker responded to every counterargument.",
+    "weight": 10,
+    "topic": "Emotions and Opinions"
+  },
+  {
+    "en": "Debate",
+    "es": "Debate",
+    "example": "The debate focused on climate policies.",
+    "weight": 10,
+    "topic": "Emotions and Opinions"
+  },
+  {
+    "en": "Controversial",
+    "es": "Controvertido",
+    "example": "It is a highly controversial topic.",
+    "weight": 10,
+    "topic": "Emotions and Opinions"
+  },
+  {
+    "en": "Persuasive",
+    "es": "Persuasivo",
+    "example": "His speech was extremely persuasive.",
+    "weight": 10,
+    "topic": "Emotions and Opinions"
+  },
+  {
+    "en": "Convincing",
+    "es": "Convincente",
+    "example": "She gave a convincing explanation.",
+    "weight": 10,
+    "topic": "Emotions and Opinions"
+  },
+  {
+    "en": "Objective",
+    "es": "Objetivo",
+    "example": "Scientists must remain objective.",
+    "weight": 10,
+    "topic": "Emotions and Opinions"
+  },
+  {
+    "en": "Subjective",
+    "es": "Subjetivo",
+    "example": "Beauty is largely subjective.",
+    "weight": 10,
+    "topic": "Emotions and Opinions"
+  },
+  {
+    "en": "Claim",
+    "es": "Afirmación",
+    "example": "The article made several controversial claims.",
+    "weight": 10,
+    "topic": "Emotions and Opinions"
+  },
+  {
+    "en": "Statement",
+    "es": "Declaración",
+    "example": "The minister issued an official statement.",
+    "weight": 10,
+    "topic": "Emotions and Opinions"
+  },
+  {
+    "en": "Praise",
+    "es": "Elogio",
+    "example": "Her work earned widespread praise.",
+    "weight": 10,
+    "topic": "Emotions and Opinions"
+  },
+  {
+    "en": "Dispute",
+    "es": "Disputa",
+    "example": "The countries are involved in a territorial dispute.",
+    "weight": 10,
+    "topic": "Emotions and Opinions"
+  },
+  {
+    "en": "Ethical issue",
+    "es": "Cuestión ética",
+    "example": "Artificial intelligence raises ethical issues.",
+    "weight": 10,
+    "topic": "Emotions and Opinions"
+  },
+  {
+    "en": "Moral dilemma",
+    "es": "Dilema moral",
+    "example": "Doctors sometimes face moral dilemmas.",
+    "weight": 10,
+    "topic": "Emotions and Opinions"
+  },
+  {
+    "en": "Logical reasoning",
+    "es": "Razonamiento lógico",
+    "example": "Logical reasoning strengthens arguments.",
+    "weight": 10,
+    "topic": "Emotions and Opinions"
+  },
+  {
+    "en": "Fallacy",
+    "es": "Falacia",
+    "example": "His argument contained several logical fallacies.",
+    "weight": 10,
+    "topic": "Emotions and Opinions"
+  },
+  {
+    "en": "Narrow-minded",
+    "es": "De mente cerrada",
+    "example": "Narrow-minded attitudes limit progress.",
+    "weight": 10,
+    "topic": "Emotions and Opinions"
+  },
+  {
+    "en": "To challenge an idea",
+    "es": "Cuestionar una idea",
+    "example": "Students should challenge ideas critically.",
+    "weight": 10,
+    "topic": "Emotions and Opinions"
+  },
+  {
+    "en": "To raise awareness",
+    "es": "Concienciar",
+    "example": "Campaigns aim to raise awareness about bullying.",
+    "weight": 10,
+    "topic": "Emotions and Opinions"
+  },
+  {
+    "en": "To reach an agreement",
+    "es": "Llegar a un acuerdo",
+    "example": "The parties failed to reach an agreement.",
+    "weight": 10,
+    "topic": "Emotions and Opinions"
+  },
+  {
+    "en": "To take into account",
+    "es": "Tener en cuenta",
+    "example": "We must take all factors into account.",
+    "weight": 10,
+    "topic": "Emotions and Opinions"
+  },
+  {
+    "en": "Heated discussion",
+    "es": "Discusión acalorada",
+    "example": "The issue led to a heated discussion.",
+    "weight": 10,
+    "topic": "Emotions and Opinions"
+  },
+  {
+    "en": "Common ground",
+    "es": "Punto en común",
+    "example": "Both sides tried to find common ground.",
+    "weight": 10,
+    "topic": "Emotions and Opinions"
+  },
+  {
+    "en": "Well-founded argument",
+    "es": "Argumento sólido",
+    "example": "He presented a well-founded argument.",
+    "weight": 10,
+    "topic": "Emotions and Opinions"
+  },
+  {
+    "en": "To refute an argument",
+    "es": "Refutar un argumento",
+    "example": "The lawyer refuted the accusation effectively.",
+    "weight": 10,
+    "topic": "Emotions and Opinions"
+  },
+  {
+    "en": "Famine",
+    "es": "Hambruna",
+    "example": "The drought led to widespread famine.",
+    "weight": 11,
+    "topic": "Global Issues"
+  },
+  {
+    "en": "Asylum seeker",
+    "es": "Solicitante de asilo",
+    "example": "The country accepted thousands of asylum seekers.",
+    "weight": 11,
+    "topic": "Global Issues"
+  },
+  {
+    "en": "Forced displacement",
+    "es": "Desplazamiento forzado",
+    "example": "Climate change may increase forced displacement.",
+    "weight": 11,
+    "topic": "Global Issues"
+  },
+  {
+    "en": "Child labour",
+    "es": "Trabajo infantil",
+    "example": "Child labour remains common in poor regions.",
+    "weight": 11,
+    "topic": "Global Issues"
+  },
+  {
+    "en": "Illiteracy",
+    "es": "Analfabetismo",
+    "example": "Illiteracy limits employment opportunities.",
+    "weight": 11,
+    "topic": "Global Issues"
+  },
+  {
+    "en": "War-torn country",
+    "es": "País devastado por la guerra",
+    "example": "Refugees escaped from war-torn countries.",
+    "weight": 11,
+    "topic": "Global Issues"
+  },
+  {
+    "en": "Access to healthcare",
+    "es": "Acceso a la sanidad",
+    "example": "Access to healthcare should be universal.",
+    "weight": 11,
+    "topic": "Global Issues"
+  },
+  {
+    "en": "Social welfare",
+    "es": "Bienestar social",
+    "example": "Strong social welfare reduces inequality.",
+    "weight": 11,
+    "topic": "Global Issues"
+  },
+  {
+    "en": "Economic downturn",
+    "es": "Crisis económica / recesión",
+    "example": "The economic downturn increased unemployment.",
+    "weight": 11,
+    "topic": "Global Issues"
+  },
+  {
+    "en": "Humanitarian aid",
+    "es": "Ayuda humanitaria",
+    "example": "The country sent humanitarian aid after the earthquake.",
+    "weight": 11,
+    "topic": "Global Issues"
+  },
+  {
+    "en": "Income disparity",
+    "es": "Desigualdad de ingresos",
+    "example": "Income disparity creates social tension.",
+    "weight": 11,
+    "topic": "Global Issues"
+  },
+  {
+    "en": "Consumer behaviour",
+    "es": "Comportamiento del consumidor",
+    "example": "Consumer behaviour changes rapidly nowadays.",
+    "weight": 12,
+    "topic": "Consumerism and Advertising"
+  },
+  {
+    "en": "Consumerism",
+    "es": "Consumismo",
+    "example": "Consumerism encourages excessive spending.",
+    "weight": 12,
+    "topic": "Consumerism and Advertising"
+  },
+  {
+    "en": "Advertising campaign",
+    "es": "Campaña publicitaria",
+    "example": "The company launched a global advertising campaign.",
+    "weight": 12,
+    "topic": "Consumerism and Advertising"
+  },
+  {
+    "en": "Brand awareness",
+    "es": "Reconocimiento de marca",
+    "example": "Social media increases brand awareness.",
+    "weight": 12,
+    "topic": "Consumerism and Advertising"
+  },
+  {
+    "en": "Brand loyalty",
+    "es": "Fidelidad a la marca",
+    "example": "Discounts help build brand loyalty.",
+    "weight": 12,
+    "topic": "Consumerism and Advertising"
+  },
+  {
+    "en": "Target audience",
+    "es": "Público objetivo",
+    "example": "The advertisement targets a younger audience.",
+    "weight": 12,
+    "topic": "Consumerism and Advertising"
+  },
+  {
+    "en": "Market research",
+    "es": "Estudio de mercado",
+    "example": "Businesses rely on market research before launching products.",
+    "weight": 12,
+    "topic": "Consumerism and Advertising"
+  },
+  {
+    "en": "Purchasing power",
+    "es": "Poder adquisitivo",
+    "example": "Inflation reduces purchasing power.",
+    "weight": 12,
+    "topic": "Consumerism and Advertising"
+  },
+  {
+    "en": "Impulse buying",
+    "es": "Compra impulsiva",
+    "example": "Supermarkets encourage impulse buying.",
+    "weight": 12,
+    "topic": "Consumerism and Advertising"
+  },
+  {
+    "en": "Misleading advertising",
+    "es": "Publicidad engañosa",
+    "example": "Consumers complained about misleading advertising.",
+    "weight": 12,
+    "topic": "Consumerism and Advertising"
+  },
+  {
+    "en": "Endorsement",
+    "es": "Promoción / respaldo publicitario",
+    "example": "Celebrity endorsements influence consumers.",
+    "weight": 12,
+    "topic": "Consumerism and Advertising"
+  },
+  {
+    "en": "Sponsorship",
+    "es": "Patrocinio",
+    "example": "The event received corporate sponsorship.",
+    "weight": 12,
+    "topic": "Consumerism and Advertising"
+  },
+  {
+    "en": "Product placement",
+    "es": "Emplazamiento de producto",
+    "example": "Product placement is common in films.",
+    "weight": 12,
+    "topic": "Consumerism and Advertising"
+  },
+  {
+    "en": "Persuasive advertising",
+    "es": "Publicidad persuasiva",
+    "example": "Persuasive advertising affects teenagers strongly.",
+    "weight": 12,
+    "topic": "Consumerism and Advertising"
+  },
+  {
+    "en": "Consumer rights",
+    "es": "Derechos del consumidor",
+    "example": "Governments must protect consumer rights.",
+    "weight": 12,
+    "topic": "Consumerism and Advertising"
+  },
+  {
+    "en": "Brand image",
+    "es": "Imagen de marca",
+    "example": "Luxury companies carefully manage their brand image.",
+    "weight": 12,
+    "topic": "Consumerism and Advertising"
+  },
+  {
+    "en": "Marketing strategy",
+    "es": "Estrategia de marketing",
+    "example": "The new marketing strategy increased sales.",
+    "weight": 12,
+    "topic": "Consumerism and Advertising"
+  },
+  {
+    "en": "Advertising slogan",
+    "es": "Eslogan publicitario",
+    "example": "The advertising slogan became iconic.",
+    "weight": 12,
+    "topic": "Consumerism and Advertising"
+  },
+  {
+    "en": "Commercial break",
+    "es": "Pausa publicitaria",
+    "example": "Streaming services reduce commercial breaks.",
+    "weight": 12,
+    "topic": "Consumerism and Advertising"
+  },
+  {
+    "en": "Word-of-mouth advertising",
+    "es": "Publicidad boca a boca",
+    "example": "Small businesses depend on word-of-mouth advertising.",
+    "weight": 12,
+    "topic": "Consumerism and Advertising"
+  },
+  {
+    "en": "Market demand",
+    "es": "Demanda del mercado",
+    "example": "Companies adapt to market demand.",
+    "weight": 12,
+    "topic": "Consumerism and Advertising"
+  },
+  {
+    "en": "Retail industry",
+    "es": "Industria minorista",
+    "example": "The retail industry faces strong competition.",
+    "weight": 12,
+    "topic": "Consumerism and Advertising"
+  },
+  {
+    "en": "Online shopping",
+    "es": "Compras online",
+    "example": "Online shopping has transformed consumer habits.",
+    "weight": 12,
+    "topic": "Consumerism and Advertising"
+  },
+  {
+    "en": "E-commerce platform",
+    "es": "Plataforma de comercio electrónico",
+    "example": "Amazon is a leading e-commerce platform.",
+    "weight": 12,
+    "topic": "Consumerism and Advertising"
+  },
+  {
+    "en": "Subscription service",
+    "es": "Servicio por suscripción",
+    "example": "Many people use subscription services nowadays.",
+    "weight": 12,
+    "topic": "Consumerism and Advertising"
+  },
+  {
+    "en": "Luxury goods",
+    "es": "Bienes de lujo",
+    "example": "Luxury goods symbolise social status.",
+    "weight": 12,
+    "topic": "Consumerism and Advertising"
+  },
+  {
+    "en": "Counterfeit products",
+    "es": "Productos falsificados",
+    "example": "Counterfeit products damage brands financially.",
+    "weight": 12,
+    "topic": "Consumerism and Advertising"
+  },
+  {
+    "en": "Consumer satisfaction",
+    "es": "Satisfacción del consumidor",
+    "example": "High-quality service improves consumer satisfaction.",
+    "weight": 12,
+    "topic": "Consumerism and Advertising"
+  },
+  {
+    "en": "Ethical consumption",
+    "es": "Consumo ético",
+    "example": "Ethical consumption is becoming more popular.",
+    "weight": 12,
+    "topic": "Consumerism and Advertising"
+  },
+  {
+    "en": "Sustainable brand",
+    "es": "Marca sostenible",
+    "example": "Consumers increasingly support sustainable brands.",
+    "weight": 12,
+    "topic": "Consumerism and Advertising"
+  },
+  {
+    "en": "Packaging waste",
+    "es": "Residuos de embalaje",
+    "example": "Packaging waste harms the environment.",
+    "weight": 12,
+    "topic": "Consumerism and Advertising"
+  },
+  {
+    "en": "Mass production",
+    "es": "Producción en masa",
+    "example": "Mass production lowers manufacturing costs.",
+    "weight": 12,
+    "topic": "Consumerism and Advertising"
+  },
+  {
+    "en": "Pricing strategy",
+    "es": "Estrategia de precios",
+    "example": "The company changed its pricing strategy.",
+    "weight": 12,
+    "topic": "Consumerism and Advertising"
+  },
+  {
+    "en": "Discount retailer",
+    "es": "Minorista de descuento",
+    "example": "Discount retailers attract budget-conscious customers.",
+    "weight": 12,
+    "topic": "Consumerism and Advertising"
+  },
+  {
+    "en": "Customer retention",
+    "es": "Fidelización de clientes",
+    "example": "Good service improves customer retention.",
+    "weight": 12,
+    "topic": "Consumerism and Advertising"
+  },
+  {
+    "en": "Promotional offer",
+    "es": "Oferta promocional",
+    "example": "The shop launched a promotional offer.",
+    "weight": 12,
+    "topic": "Consumerism and Advertising"
+  },
+  {
+    "en": "Consumer trend",
+    "es": "Tendencia de consumo",
+    "example": "Healthy eating is a growing consumer trend.",
+    "weight": 12,
+    "topic": "Consumerism and Advertising"
+  },
+  {
+    "en": "Product launch",
+    "es": "Lanzamiento de producto",
+    "example": "The product launch attracted media attention.",
+    "weight": 12,
+    "topic": "Consumerism and Advertising"
+  },
+  {
+    "en": "Advertising agency",
+    "es": "Agencia de publicidad",
+    "example": "The company hired an advertising agency.",
+    "weight": 12,
+    "topic": "Consumerism and Advertising"
+  },
+  {
+    "en": "Market saturation",
+    "es": "Saturación del mercado",
+    "example": "Smartphones are reaching market saturation.",
+    "weight": 12,
+    "topic": "Consumerism and Advertising"
+  },
+  {
+    "en": "Sales pitch",
+    "es": "Discurso de ventas",
+    "example": "The sales pitch sounded convincing.",
+    "weight": 12,
+    "topic": "Consumerism and Advertising"
+  },
+  {
+    "en": "Brand recognition",
+    "es": "Reconocimiento de marca",
+    "example": "Logos improve brand recognition.",
+    "weight": 12,
+    "topic": "Consumerism and Advertising"
+  },
+  {
+    "en": "Consumer protection",
+    "es": "Protección del consumidor",
+    "example": "Laws guarantee consumer protection.",
+    "weight": 12,
+    "topic": "Consumerism and Advertising"
+  },
+  {
+    "en": "Purchasing decision",
+    "es": "Decisión de compra",
+    "example": "Reviews influence purchasing decisions.",
+    "weight": 12,
+    "topic": "Consumerism and Advertising"
+  },
+  {
+    "en": "Shopping habits",
+    "es": "Hábitos de compra",
+    "example": "Social media changes shopping habits.",
+    "weight": 12,
+    "topic": "Consumerism and Advertising"
+  },
+  {
+    "en": "Disposable income",
+    "es": "Renta disponible",
+    "example": "Rising costs reduce disposable income.",
+    "weight": 12,
+    "topic": "Consumerism and Advertising"
+  },
+  {
+    "en": "Commercialisation",
+    "es": "Comercialización",
+    "example": "Critics oppose the commercialisation of education.",
+    "weight": 12,
+    "topic": "Consumerism and Advertising"
+  },
+  {
+    "en": "Influencer marketing",
+    "es": "Marketing de influencers",
+    "example": "Influencer marketing dominates social media.",
+    "weight": 12,
+    "topic": "Consumerism and Advertising"
+  },
+  {
+    "en": "Buyer’s remorse",
+    "es": "Arrepentimiento del comprador",
+    "example": "He experienced buyer’s remorse after purchasing the car.",
+    "weight": 12,
+    "topic": "Consumerism and Advertising"
+  },
+  {
+    "en": "Cost-effective",
+    "es": "Rentable / económico",
+    "example": "Public transport is a cost-effective option.",
+    "weight": 12,
+    "topic": "Consumerism and Advertising"
+  },
+  {
+    "en": "Counterfeit products",
+    "es": "Productos falsificados",
+    "example": "Counterfeit products damage brands financially.",
+    "weight": 12,
+    "topic": "Consumerism and Advertising"
+  },
+  {
+    "en": "Groundbreaking discovery",
+    "es": "Descubrimiento revolucionario",
+    "example": "Scientists made a groundbreaking discovery in genetics.",
+    "weight": 12,
+    "topic": "Consumerism and Advertising"
+  },
+  {
+    "en": "Cutting-edge technology",
+    "es": "Tecnología de vanguardia",
+    "example": "The laboratory uses cutting-edge technology.",
+    "weight": 12,
+    "topic": "Consumerism and Advertising"
+  },
+  {
+    "en": "Scientific breakthrough",
+    "es": "Avance científico",
+    "example": "The vaccine represented a scientific breakthrough.",
+    "weight": 12,
+    "topic": "Consumerism and Advertising"
+  },
+  {
+    "en": "Research grant",
+    "es": "Beca de investigación",
+    "example": "The scientist received a research grant.",
+    "weight": 12,
+    "topic": "Consumerism and Advertising"
+  },
+  {
+    "en": "Academic journal",
+    "es": "Revista académica",
+    "example": "Academic journals publish specialised studies.",
+    "weight": 12,
+    "topic": "Consumerism and Advertising"
+  },
+  {
+    "en": "Citation",
+    "es": "Cita académica",
+    "example": "Proper citation prevents plagiarism.",
+    "weight": 12,
+    "topic": "Consumerism and Advertising"
+  },
+  {
+    "en": "Plagiarism",
+    "es": "Plagio",
+    "example": "Universities punish plagiarism severely.",
+    "weight": 12,
+    "topic": "Consumerism and Advertising"
+  }
+]
