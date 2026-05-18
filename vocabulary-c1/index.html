@@ -1,1 +1,363 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Flashcards Vocabulary C1</title>
 
+<style>
+  body { 
+    font-family: Arial; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    background: #f0f0f0; 
+    padding: 30px;
+  }
+
+  h1 { margin-bottom: 10px; }
+
+  .center-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    margin: 10px 0;
+    flex-wrap: wrap;
+  }
+
+  .card-container {
+    perspective: 1000px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .card {
+    width: 300px;
+    height: 180px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+    cursor: pointer;
+  }
+
+  .card.flip { transform: rotateY(180deg); }
+
+  .face {
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    background: white;
+    text-align: center;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+  }
+
+  .back { transform: rotateY(180deg); }
+
+  button {
+    padding: 8px 18px; 
+    border: none;
+    background: #2196F3; 
+    color: white; 
+    border-radius: 6px; 
+    cursor: pointer;
+  }
+
+  .btn-fav { background: #e91e63; }
+  .btn-toggle { background: #ff9800; }
+
+  select {
+    padding: 8px 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    max-width: 280px;
+  }
+
+  #topic-label {
+    font-size: 13px;
+    opacity: 0.7;
+    margin-top: 8px;
+  }
+
+  #counter {
+    font-size: 14px;
+    margin-top: 5px;
+    opacity: 0.8;
+  }
+
+  #favorites-view {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    width: 90%;
+    max-width: 600px;
+  }
+
+  .fav-item {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+  }
+
+  .fav-item button {
+    background: red;
+    font-size: 12px;
+    padding: 4px 8px;
+    margin-top: 6px;
+  }
+</style>
+</head>
+
+<body>
+
+<div id="main-view">
+
+  <h1>Flashcards Vocabulary C1</h1>
+
+  <div class="center-buttons">
+    <button onclick="openFavorites()">⭐ Ver favoritos</button>
+  </div>
+
+  <div class="center-buttons">
+    <label style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
+      Tema:
+      <select id="groupSelect" onchange="applyGroupFilter()">
+        <option value="ALL">Todos</option>
+        <option value="Education and Learning">Education and Learning</option>
+        <option value="Work and Business">Work and Business</option>
+        <option value="Economy and Money">Economy and Money</option>
+        <option value="Environment and Climate Change">Environment and Climate Change</option>
+        <option value="Politics and Society">Politics and Society</option>
+        <option value="Physical and Mental Health">Physical and Mental Health</option>
+        <option value="Media and Social Networks">Media and Social Networks</option>
+        <option value="Crime and Justice">Crime and Justice</option>
+        <option value="Travel and Culture">Travel and Culture</option>
+        <option value="Emotions and Opinions">Emotions and Opinions</option>
+        <option value="Global Issues">Global Issues</option>
+        <option value="Consumerism and Advertising">Consumerism and Advertising</option>
+      </select>
+    </label>
+
+    <button onclick="resetGroup()">Reset</button>
+  </div>
+
+  <div id="counter"></div>
+
+  <div class="card-container">
+    <div id="card" class="card" onclick="flipCard()">
+      <div class="face front">
+        <div id="question"></div>
+        <div id="topic-label"></div>
+      </div>
+
+      <div class="face back">
+        <div id="answer"></div>
+        <div id="example" style="margin-top: 8px; font-size: 14px; opacity: 0.75;"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="center-buttons">
+    <button onclick="prevCard()">Anterior</button>
+    <button class="btn-toggle" onclick="toggleDirection()">EN↔ES</button>
+    <button onclick="nextCard()">Siguiente</button>
+  </div>
+
+  <div class="center-buttons">
+    <button class="btn-fav" onclick="toggleFavorite()">⭐ Favorito</button>
+  </div>
+
+</div>
+
+<div id="favorites-view" style="display:none;">
+  <h2>⭐ Favoritos</h2>
+
+  <div id="favorites-list"></div>
+
+  <div class="center-buttons">
+    <button onclick="closeFavorites()" style="background:#2196F3;">
+      Volver a estudiar
+    </button>
+  </div>
+</div>
+
+<script>
+let vocab = [];
+let studyVocab = [];
+let index = 0;
+let reversed = false;
+
+let favorites = JSON.parse(localStorage.getItem("favorites_vocab_c1") || "[]");
+
+function shuffle(arr) {
+  for (let i = arr.length - 1; i > 0; i--) {
+    let j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+}
+
+function loadVocab() {
+  fetch("vocabulario.json")
+    .then(response => response.json())
+    .then(data => {
+      vocab = data;
+      studyVocab = [...vocab];
+      shuffle(studyVocab);
+      index = 0;
+      showCard();
+    })
+    .catch(error => {
+      document.getElementById("question").textContent = "Error cargando vocabulario.json";
+      document.getElementById("answer").textContent = "Revisa que el archivo esté en la misma carpeta que este HTML.";
+      document.getElementById("example").textContent = "";
+      console.error(error);
+    });
+}
+
+function showCard() {
+  if (studyVocab.length === 0) {
+    document.getElementById("question").textContent = "No hay tarjetas en este tema.";
+    document.getElementById("answer").textContent = "Elige otro tema o selecciona Todos.";
+    document.getElementById("example").textContent = "";
+    document.getElementById("topic-label").textContent = "";
+    document.getElementById("counter").textContent = "0 tarjetas";
+    return;
+  }
+
+  const c = studyVocab[index];
+
+  document.getElementById("question").textContent = reversed ? c.es : c.en;
+  document.getElementById("answer").textContent = reversed ? c.en : c.es;
+  document.getElementById("example").textContent = c.example;
+  document.getElementById("topic-label").textContent = c.topic;
+
+  document.getElementById("counter").textContent = 
+    `Tarjeta ${index + 1} de ${studyVocab.length}`;
+
+  const favBtn = document.querySelector(".btn-fav");
+  favBtn.textContent = isFavorite(c) ? "⭐ Quitar favorito" : "⭐ Favorito";
+}
+
+function flipCard() {
+  document.getElementById("card").classList.toggle("flip");
+}
+
+function nextCard() {
+  if (studyVocab.length === 0) return;
+
+  index = Math.floor(Math.random() * studyVocab.length);
+
+  document.getElementById("card").classList.remove("flip");
+  showCard();
+}
+
+function prevCard() {
+  if (studyVocab.length === 0) return;
+
+  index = (index - 1 + studyVocab.length) % studyVocab.length;
+
+  document.getElementById("card").classList.remove("flip");
+  showCard();
+}
+
+function toggleDirection() {
+  reversed = !reversed;
+
+  document.getElementById("card").classList.remove("flip");
+  showCard();
+}
+
+function applyGroupFilter() {
+  const sel = document.getElementById("groupSelect").value;
+
+  if (sel === "ALL") {
+    studyVocab = [...vocab];
+  } else {
+    studyVocab = vocab.filter(v => v.topic === sel);
+  }
+
+  shuffle(studyVocab);
+  index = 0;
+
+  document.getElementById("card").classList.remove("flip");
+  showCard();
+}
+
+function resetGroup() {
+  document.getElementById("groupSelect").value = "ALL";
+  applyGroupFilter();
+}
+
+function isFavorite(item) {
+  return favorites.some(f => f.en === item.en && f.topic === item.topic);
+}
+
+function toggleFavorite() {
+  if (studyVocab.length === 0) return;
+
+  const item = studyVocab[index];
+
+  if (isFavorite(item)) {
+    favorites = favorites.filter(f => !(f.en === item.en && f.topic === item.topic));
+  } else {
+    favorites.push(item);
+  }
+
+  localStorage.setItem("favorites_vocab_c1", JSON.stringify(favorites));
+
+  showCard();
+  updateFavoritesPage();
+}
+
+function removeFavorite(i) {
+  favorites.splice(i, 1);
+  localStorage.setItem("favorites_vocab_c1", JSON.stringify(favorites));
+  updateFavoritesPage();
+  showCard();
+}
+
+function openFavorites() {
+  document.getElementById("main-view").style.display = "none";
+  document.getElementById("favorites-view").style.display = "block";
+  updateFavoritesPage();
+}
+
+function closeFavorites() {
+  document.getElementById("favorites-view").style.display = "none";
+  document.getElementById("main-view").style.display = "block";
+}
+
+function updateFavoritesPage() {
+  const box = document.getElementById("favorites-list");
+  box.innerHTML = "";
+
+  if (favorites.length === 0) {
+    box.innerHTML = "<p>No hay favoritos aún.</p>";
+    return;
+  }
+
+  favorites.forEach((f, i) => {
+    box.innerHTML += `
+      <div class="fav-item">
+        <strong>${f.en}</strong><br>
+        ${f.es}<br>
+        <em>${f.example}</em><br>
+        <small>${f.topic}</small><br>
+        <button onclick="removeFavorite(${i})">Quitar</button>
+      </div>`;
+  });
+}
+
+loadVocab();
+</script>
+
+</body>
+</html>
